@@ -18,9 +18,6 @@ const geistMono = Geist_Mono({
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: 'https://ff4ultima-plus.vercel.app/guides.html', label: 'Guides' },
-  { href: 'https://ff4ultima-plus.vercel.app/classic.html', label: 'Ultima Classic' },
-  { href: 'https://ff4ultima-plus.vercel.app/ulti.html', label: 'Custom' },
-  { href: 'https://ff4ultima-plus.vercel.app/indev.html', label: 'In Dev.' },
   { href: '/discord', label: 'Discord' }
 ];
 
@@ -30,7 +27,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
       <Head>
-        <title>FF4 Ultima Patcher</title>
+        <title>FF6 ASC Patcher</title>
         <meta name="description" content="Get FF4 Ultima Plus" title="FF4 Ultima Patcher" />
         <link rel="icon" href="https://ultima-plus.vercel.app/img/favicon.png" sizes="any" />
       </Head>

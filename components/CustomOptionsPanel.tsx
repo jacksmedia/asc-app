@@ -46,8 +46,8 @@ const CustomOptionsPanel: React.FC<CustomOptionsPanelProps> = ({
 
   const handlePreviewClick = (patch: OptionalPatch) => {
   if (patch.previewImage) {
-    // Creates manifest path for styles category
-    const manifestPath = patch.category === 'styles' 
+    // Creates manifest path for fonts category
+    const manifestPath = patch.category === 'fonts' 
       ? `/manifests/${patch.id}-manifest.txt`  // Pattern for patch.id matches manifest title
       : ``;
     console.log(`Generated ${manifestPath} for manifest text file name.`)

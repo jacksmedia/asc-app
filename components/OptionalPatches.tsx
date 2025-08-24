@@ -75,7 +75,7 @@ const OptionalPatches: React.FC = () => {
     
     const a = document.createElement('a');
     a.href = downloadUrl;
-    a.download = `FF4Ultima_Custom_${new Date().getTime()}.sfc`;
+    a.download = `FF6_ASC_${new Date().getTime()}.sfc`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);

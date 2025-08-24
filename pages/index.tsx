@@ -8,7 +8,7 @@ const HomePage: NextPage = () => {
     <Layout>
       <div className='plus-patcher-bg container-fluid'>
         <div className='row'>
-          <h1 className='d-flex col-12 justify-content-center app-title'>FF4 Ultima Plus Patcher</h1>
+          <h1 className='d-flex col-12 justify-content-center app-title'>FF6 "A Soldier's Contingency" Patcher</h1>
         </div>
         <PlusPatcher />
         {/* row styling exists in above component*/}

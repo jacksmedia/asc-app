@@ -36,19 +36,39 @@ export default function PatchPage() {
   const optionalPatchesConfig = useMemo(() => ({
     categories : [
       {
-        id: 'styles',
-        title: 'Hero Styles',
-        description: 'Changes battle & map sprites, and portraits',
+        id: 'graphics',
+        title: 'Graphics',
+        description: 'Changes hero sprites & portraits',
         allowMultiple: false,
-        zipFile: 'Styles.zip',
-        hasManifest: true,
-        manifestPath: (patchName: string) => `/manifests/${patchName}-manifest.txt`
+        zipFile: 'Graphics.zip',
+        hasManifest: false
+        // manifestPath: (patchName: string) => `/manifests/${patchName}-manifest.txt`
+        // filePattern: /Style/i // can be used filter a multi-catergory archive
+      },
+      {
+        id: 'difficulty',
+        title: 'Difficulty',
+        description: 'Mild and Insane vs Normal',
+        allowMultiple: false,
+        zipFile: 'Difficulty.zip',
+        hasManifest: false
+        // manifestPath: (patchName: string) => `/manifests/${patchName}-manifest.txt`
+        // filePattern: /Style/i // can be used filter a multi-catergory archive
+      },
+      {
+        id: 'battle-system',
+        title: 'Battle System',
+        description: 'Classic ATB or RoSoDude\'s Comprehensive ATB Enhancement',
+        allowMultiple: false,
+        zipFile: 'Battle-System.zip',
+        hasManifest: false
+        // manifestPath: (patchName: string) => `/manifests/${patchName}-manifest.txt`
         // filePattern: /Style/i // can be used filter a multi-catergory archive
       },
       {
         id: 'fonts',
-        title: 'Alt Fonts (+ Item Names)',
-        description: 'Alternate Fonts, + Alt. Item Names with SBG',
+        title: 'Alt Fonts',
+        description: 'Alternate Fonts',
         allowMultiple: false,
         zipFile: 'Fonts.zip',
         hasManifest: false
@@ -68,7 +88,7 @@ export default function PatchPage() {
     const loadPatches = async () => {
       try {
         setLoadingPatches(true);
-        const response = await fetch('/FF4UP.zip');
+        const response = await fetch('/FF6ASC.zip');
         const zipData = await response.arrayBuffer();
         const zip = await JSZip.loadAsync(zipData);
         const patchEntries: Patch[] = [];
@@ -119,7 +139,7 @@ export default function PatchPage() {
     loadPatches();
   }, []);
 //////////////////////////////////////
-  const EXPECTED_CRC32 = '1F373E00';  // current Ultima Plus CRC32
+  const EXPECTED_CRC32 = '647126BE';  // current Ultima Plus CRC32
 ////////////////////////////////////// obv this changes per update
 
   // Detects & removes SMC/SFC copier header if present
@@ -217,7 +237,7 @@ export default function PatchPage() {
         </p>
         <DownloadRomButton
           onGenerateRom={generatePatchedRom} // Now uses generator function
-          filename={`FF4 Ultima Plus${selectedOptionalPatches.length > 0 ? ' Custom' : ''}.sfc`}
+          filename={`FF6 ASC${selectedOptionalPatches.length > 0 ? ' Custom' : ''}.sfc`}
           disabled={!hasValidRom || isPatching}
         />
       </div>
