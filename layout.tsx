@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Geist, Geist_Mono } from "next/font/google";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const geistSans = Geist({
@@ -14,10 +15,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-
 const navLinks = [
   { href: '/', label: 'Home' },
-  { href: 'https://ff4ultima-plus.vercel.app/guides.html', label: 'Guides' },
+  // { href: 'https://ff6asc.vercel.app/guides.html', label: 'Guides' },
   { href: '/discord', label: 'Discord' }
 ];
 
@@ -28,8 +28,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     <html lang="en">
       <Head>
         <title>FF6 ASC Patcher</title>
-        <meta name="description" content="Get FF4 Ultima Plus" title="FF4 Ultima Patcher" />
-        <link rel="icon" href="https://ultima-plus.vercel.app/img/favicon.png" sizes="any" />
+        <meta name="description" content="Get FF6 ASC" title="FF6 ASC Patcher" />
+        <link rel="icon" href="https://ff6asc.vercel.app/img/favicon.png" sizes="any" />
       </Head>
 
       <body>

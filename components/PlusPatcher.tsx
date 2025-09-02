@@ -139,7 +139,7 @@ export default function PatchPage() {
     loadPatches();
   }, []);
 //////////////////////////////////////
-  const EXPECTED_CRC32 = '647126BE';  // current Ultima Plus CRC32
+  const EXPECTED_CRC32 = '0A739766';  // current ASC-flavor-A CRC32
 ////////////////////////////////////// obv this changes per update
 
   // Detects & removes SMC/SFC copier header if present
@@ -174,10 +174,10 @@ export default function PatchPage() {
       }
       console.log(`Found matching patch: ${matchingPatch.originalName}`);
 
-      // Expands uploaded rom to 2MB to fit FF4 Ultima
-      const expandedRom = headerlessRom.length < 2 * 1024 * 1024
+      // Expands uploaded rom to 6MB to fit FF6ASC
+      const expandedRom = headerlessRom.length < 6 * 1024 * 1024
         ? (() => {
-            const newRom = new Uint8Array(2 * 1024 * 1024);
+            const newRom = new Uint8Array(6 * 1024 * 1024);
             newRom.set(headerlessRom);
             return newRom;
           })()
@@ -232,8 +232,8 @@ export default function PatchPage() {
       <div className='d-flex justify-content-center align-items-center h-100'>
         <PlusTitle />
         <p className="text-center mb-2">
-          Upload your FFII or FFIV ROM file to create a copy of FF4 Ultima Plus.<br/>
-          Choose alternate graphics & a different font if you wish!
+          Upload your FFIII or FFVI(J) ROM file to create a copy of FF6 ASC.<br/>
+          Choose alternate graphics, difficulty, & a different font if you wish!
         </p>
         <DownloadRomButton
           onGenerateRom={generatePatchedRom} // Now uses generator function

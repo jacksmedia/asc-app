@@ -35,7 +35,7 @@ const CustomOptionsPanel: React.FC<CustomOptionsPanelProps> = ({
   onPreviewImage,
   isDisabled = false
 }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
   const [modalOpen, setModalOpen] = useState(false);
   const [modalProps, setModalProps] = useState<{
     src: string;
@@ -98,7 +98,7 @@ const CustomOptionsPanel: React.FC<CustomOptionsPanelProps> = ({
   return (
     <div className="w-full max-w-2xl ">
       {/* Toggle Button */}
-      <button
+      {/* <button
         onClick={() => setIsExpanded(!isExpanded)}
         disabled={isDisabled}
         className={`
@@ -109,16 +109,16 @@ const CustomOptionsPanel: React.FC<CustomOptionsPanelProps> = ({
           }
           ${isExpanded ? 'rounded-b-none' : ''}
         `}
-      >
+      > */}
         <div className="flex items-center justify-between p-2">
-          <span>Do You Want Custom Options?</span>
+          <span>Number of Custom Options</span>
           <div className="flex items-center space-x-2">
             {getSelectedCount() > 0 && (
               <span className="px-2 py-1 text-sm">
                 {getSelectedCount()} selected
               </span>
             )}
-            <svg 
+            {/* <svg 
               className={`w-5 h-5 transform transition-transform ${isExpanded ? 'rotate-180' : ''}`}
               xmlns="http://www.w3.org/2000/svg" 
               fill="none" 
@@ -126,10 +126,10 @@ const CustomOptionsPanel: React.FC<CustomOptionsPanelProps> = ({
               stroke="currentColor"
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-            </svg>
+            </svg> */}
           </div>
         </div>
-      </button>
+      {/* </button> */}
 
       {/* Options Panel */}
       {isExpanded && (
