@@ -111,7 +111,7 @@ const CustomOptionsPanel: React.FC<CustomOptionsPanelProps> = ({
         `}
       > */}
         <div className="flex items-center justify-between p-2">
-          <span>Number of Custom Options</span>
+          <h3>Number of Custom Options</h3>
           <div className="flex items-center space-x-2">
             {getSelectedCount() > 0 && (
               <span className="px-2 py-1 text-sm">
