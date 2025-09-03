@@ -58,7 +58,7 @@ export default function PatchPage() {
       {
         id: 'battle-system',
         title: 'Battle System',
-        description: 'Classic ATB or RoSoDude\'s Comprehensive ATB Enhancement',
+        description: 'RoSoDude\'s Comprehensive ATB Enhancement',
         allowMultiple: false,
         zipFile: 'Battle-System.zip',
         hasManifest: false
@@ -66,9 +66,19 @@ export default function PatchPage() {
         // filePattern: /Style/i // can be used filter a multi-catergory archive
       },
       {
+        id: 'enhancements',
+        title: 'Enhancements to Menu and Combat',
+        description: 'Choose one or both!',
+        allowMultiple: true,
+        zipFile: 'Enhancements.zip',
+        hasManifest: false
+        // manifestPath: (patchName: string) => `/manifests/${patchName}-manifest.txt`
+        // filePattern: /Style/i // can be used filter a multi-catergory archive
+      },
+      {
         id: 'fonts',
         title: 'Alt Fonts',
-        description: 'Alternate Fonts',
+        description: 'Alternate Font',
         allowMultiple: false,
         zipFile: 'Fonts.zip',
         hasManifest: false
