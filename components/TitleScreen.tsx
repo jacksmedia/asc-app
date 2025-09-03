@@ -1,15 +1,15 @@
 import Image from "next/image";
 
-const PlusTitle = () => {
+const TitleScreen = () => {
   return(
     <Image
         className=""
-        src="/img/classicTitle.png"
-        alt="FF4 Ultima logo"
+        src="/img/Title.png"
+        alt="FF6 ASC logo"
         width={256}
         height={224}
         priority
     />
   );
 };
-export default PlusTitle;
+export default TitleScreen;

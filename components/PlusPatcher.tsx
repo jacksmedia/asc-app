@@ -8,7 +8,7 @@ import CustomOptionsPanel from '@/components/CustomOptionsPanel';
 import { applyIPS } from '@/lib/patcher';
 import computeCRC32 from '@/lib/crc32';
 import { useOptionalPatches } from '@/hooks/useOptionalPatches';
-import PlusTitle from "@/components/PlusTitle";
+import PlusTitle from "@/components/TitleScreen";
 
 type Patch = {
   name: string;

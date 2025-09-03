@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
 import Layout from '@/layout';
 import Head from 'next/head';
-import PlusTitle from "@/components/PlusTitle";
+import PlusTitle from "@/components/TitleScreen";
 import OptionalPatches from '@/components/OptionalPatches';
 
 
