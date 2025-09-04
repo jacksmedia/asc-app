@@ -52,18 +52,14 @@ export default function PatchPage() {
         allowMultiple: false,
         zipFile: 'Difficulty.zip',
         hasManifest: false
-        // manifestPath: (patchName: string) => `/manifests/${patchName}-manifest.txt`
-        // filePattern: /Style/i // can be used filter a multi-catergory archive
       },
       {
         id: 'battle-system',
-        title: 'Battle System',
-        description: 'RoSoDude\'s Comprehensive ATB Enhancement',
+        title: 'Active Mode Battle',
+        description: 'RoSoDude\'s Comprehensive ATB Enhancements, v1.03 & WIP v1.04',
         allowMultiple: false,
-        zipFile: 'Battle-System.zip',
+        zipFile: 'Active-Mode-Battle.zip',
         hasManifest: false
-        // manifestPath: (patchName: string) => `/manifests/${patchName}-manifest.txt`
-        // filePattern: /Style/i // can be used filter a multi-catergory archive
       },
       {
         id: 'enhancements',
@@ -72,15 +68,37 @@ export default function PatchPage() {
         allowMultiple: true,
         zipFile: 'Enhancements.zip',
         hasManifest: false
-        // manifestPath: (patchName: string) => `/manifests/${patchName}-manifest.txt`
-        // filePattern: /Style/i // can be used filter a multi-catergory archive
       },
       {
         id: 'fonts',
-        title: 'Alt Fonts',
-        description: 'Alternate Font',
+        title: 'Alt Font',
+        description: 'Serif "Clean Font" with New Element Icons',
         allowMultiple: false,
         zipFile: 'Fonts.zip',
+        hasManifest: false
+      },
+      {
+        id: 'music',
+        title: 'Music Options',
+        description: 'Customize Certain Songs',
+        allowMultiple: false,
+        zipFile: 'Music-Options.zip',
+        hasManifest: false
+      },
+      {
+        id: 'other',
+        title: 'Other Patches',
+        description: 'Mechanics & Items Options (Can Choose Multiple)',
+        allowMultiple: true,
+        zipFile: 'Other-Patches.zip',
+        hasManifest: false
+      },
+      {
+        id: 'music',
+        title: 'More Magic',
+        description: 'Give Additional Heroes Magic (Use Sparingly to Avoid a Nerfed Game)',
+        allowMultiple: true,
+        zipFile: 'More-Magic.zip',
         hasManifest: false
       }
     ]
