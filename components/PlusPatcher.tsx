@@ -80,8 +80,8 @@ export default function PatchPage() {
       {
         id: 'music',
         title: 'Music Options',
-        description: 'Customize Certain Songs',
-        allowMultiple: false,
+        description: 'Customize Certain Songs (Can Choose Multiple)',
+        allowMultiple: true,
         zipFile: 'Music-Options.zip',
         hasManifest: false
       },
