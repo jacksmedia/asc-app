@@ -96,7 +96,9 @@ main div {
 }
 
 .chosen-box {
-  border: 5px red groove;
+  border-radius: 5px;
+  border: #2b8dca 3px groove;
+  background: radial-gradient(#333, #333,#39a);
 }
 .unchosen-box {
   border: 2px black solid;
@@ -107,14 +109,16 @@ main div {
 /* all styling is local! */
 
 
-/* all buttons: FileUploader, CustomOptionsPanel, DownloadRomButton */
-.nicer-btn {
+/* for empty "dummy" option .ips files, scoped in PlusPatcher */
+.default-option {
   border-radius: 5px;
-  border: #ae7517 3px groove;
-  /* background: linear-gradient(#7f5511, #333, #333, #7f5511); */
-  background: radial-gradient(#333, #333,#533608);
+  border: #2b8dca 3px groove;
+  background: radial-gradient(#333, #333,#39a);
 }
 
+.nicer-btn {
+  border-radius: 10px;;
+}
 
 /* Workaround for the overhyped garbage that is Bootstrap columns */
 .two-column-layout {
@@ -184,19 +188,6 @@ main div {
 }
 
 
-/* BothTitles */
-.both-titles {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  height: 224px;
-  max-height: 224px;
-}
-
-
-
 /* index.tsx title styling */
 .app-title {
   line-height: 1;
@@ -207,6 +198,16 @@ main div {
   margin-bottom: 1rem;
 }
 
+.image-sizing {
+  max-width: 30px;
+  max-height: 30px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.flip-horizontal {
+  transform: scaleX(-1);
+}
 
 /* older styling */
 .hidden-input {

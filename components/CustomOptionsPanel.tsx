@@ -17,6 +17,7 @@ export interface PatchCategory {
   title: string;
   description?: string;
   patches: OptionalPatch[];
+  defaultChoice?: string;
   allowMultiple?: boolean; // If false, radio button behavior; if true, checkbox behavior
 }
 

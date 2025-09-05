@@ -30,6 +30,7 @@ export default function PatchPage() {
   const [isPatching, setIsPatching] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [loadingPatches, setLoadingPatches] = useState(true);
+  const [stylingDefaults, setStylingDefaults] = useState(true);
   const [selectedOptionalPatches, setSelectedOptionalPatches] = useState<string[]>([]);
 
   // Optional patches by category
@@ -41,6 +42,7 @@ export default function PatchPage() {
         description: 'Changes hero sprites & portraits',
         allowMultiple: false,
         zipFile: 'Graphics.zip',
+        defaultChoice: '',
         hasManifest: false
         // manifestPath: (patchName: string) => `/manifests/${patchName}-manifest.txt`
         // filePattern: /Style/i // can be used filter a multi-catergory archive
@@ -51,6 +53,7 @@ export default function PatchPage() {
         description: 'Mild and Insane vs Normal',
         allowMultiple: false,
         zipFile: 'Difficulty.zip',
+        defaultChoice: '',
         hasManifest: false
       },
       {
@@ -59,6 +62,7 @@ export default function PatchPage() {
         description: 'RoSoDude\'s Comprehensive ATB Enhancements, v1.03 & WIP v1.04',
         allowMultiple: false,
         zipFile: 'Active-Mode-Battle.zip',
+        defaultChoice: '',
         hasManifest: false
       },
       {
@@ -67,6 +71,7 @@ export default function PatchPage() {
         description: 'Choose one or both!',
         allowMultiple: true,
         zipFile: 'Enhancements.zip',
+        defaultChoice: '',
         hasManifest: false
       },
       {
@@ -75,6 +80,7 @@ export default function PatchPage() {
         description: 'Serif "Clean Font" with New Element Icons',
         allowMultiple: false,
         zipFile: 'Fonts.zip',
+        defaultChoice: '',
         hasManifest: false
       },
       {
@@ -83,6 +89,7 @@ export default function PatchPage() {
         description: 'Customize Certain Songs (Can Choose Multiple)',
         allowMultiple: true,
         zipFile: 'Music-Options.zip',
+        defaultChoice: '',
         hasManifest: false
       },
       {
@@ -91,6 +98,7 @@ export default function PatchPage() {
         description: 'Mechanics & Items Options (Can Choose Multiple)',
         allowMultiple: true,
         zipFile: 'Other-Patches.zip',
+        defaultChoice: '',
         hasManifest: false
       },
       {
@@ -99,6 +107,7 @@ export default function PatchPage() {
         description: 'Give Additional Heroes Magic (Use Sparingly to Avoid a Nerfed Game)',
         allowMultiple: true,
         zipFile: 'More-Magic.zip',
+        defaultChoice: '',
         hasManifest: false
       }
     ]
@@ -111,8 +120,20 @@ export default function PatchPage() {
     getSelectedPatches
   } = useOptionalPatches(optionalPatchesConfig);
 
-  // Loads main Ultima patches
+  // these are the ASC default settings represented by "dummy" empty patch files
+  // matched by textContent (plaintext in the div element) rendered from
+  // their filenames once unzipped;
+  // these are only scoped here
+  const defaultOptions: string[] = ["FF6ASC A",
+    "FF6ASC Difficulty NORMAL",
+    "FF6 Vanilla ATB"
+  ];
+  // CSS class variable, see global.css
+  const defaultStyling ='default-option';
+
+  
   useEffect(() => {
+    // Loads main ASC patches
     const loadPatches = async () => {
       try {
         setLoadingPatches(true);
@@ -164,8 +185,47 @@ export default function PatchPage() {
       }
     };
 
-    loadPatches();
+    loadPatches(); // kicks off the main rendering logic   
   }, []);
+
+
+
+  useEffect(() => {
+  // Selectively styles some components
+  const stylePatches = (defaultOptions: string[], defaultStyling: string): void => {
+    try {
+      setStylingDefaults(true);
+      
+      // Function to highlight default options; written w help from Claude Sonnet 4
+      const highlightDefaultOptions = (targetTexts: string[], highlightClass: string): void => {
+        // Get all div elements in the document
+        const divs: NodeListOf<HTMLDivElement> = document.querySelectorAll('div');
+
+        divs.forEach((div: HTMLDivElement) => {
+          // Check if this div contains the target text
+          if (targetTexts.includes(div.textContent?.trim() || '')) {
+            // Find the closest ancestor label element!! 🤯
+            const parentLabel: HTMLLabelElement | null = div.closest('label');
+            
+            if (parentLabel) {
+              // Add highlighting class to the parent label
+              parentLabel.classList.add(highlightClass);
+            }
+          }
+        });
+      };
+      highlightDefaultOptions(defaultOptions, defaultStyling);
+    } catch (err) {
+      console.error('Failed to style default options:', err);
+      setError('Failed to load main patch files.');
+    } finally {
+      setStylingDefaults(false);
+    }
+  };
+
+  stylePatches(defaultOptions, defaultStyling);
+}, []);
+
 //////////////////////////////////////
   const EXPECTED_CRC32 = '0A739766';  // current ASC-flavor-A CRC32
 ////////////////////////////////////// obv this changes per update
