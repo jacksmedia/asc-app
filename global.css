@@ -98,27 +98,26 @@ main div {
 .chosen-box {
   border-radius: 5px;
   border: #2b8dca 3px groove;
-  background: radial-gradient(#333, #333,#39a);
+  background: radial-gradient(#333, #333,#2b8dca);
 }
 .unchosen-box {
   border: 2px black solid;
 }
 
-
-/* ImagePreviewModal */
-/* all styling is local! */
-
-
 /* for empty "dummy" option .ips files, scoped in PlusPatcher */
 .default-option {
   border-radius: 5px;
-  border: #2b8dca 3px groove;
+  /* border: #2b8dca 3px groove; */
   background: radial-gradient(#333, #333,#39a);
 }
 
 .nicer-btn {
   border-radius: 10px;;
 }
+
+/* ImagePreviewModal */
+/* all styling is local! */
+
 
 /* Workaround for the overhyped garbage that is Bootstrap columns */
 .two-column-layout {

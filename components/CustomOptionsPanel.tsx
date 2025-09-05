@@ -1,3 +1,4 @@
+// CustomOptionsPanel.tsx
 // code co-authored by Claude Sonnet 4
 import React, { useState } from 'react';
 import ImagePreviewModal from './ImagePreviewModal';
@@ -9,6 +10,7 @@ export interface OptionalPatch {
   filename: string;
   data: Uint8Array;
   category?: string;
+  defaultChoice?: string;
   previewImage?: string;
 }
 
@@ -17,8 +19,8 @@ export interface PatchCategory {
   title: string;
   description?: string;
   patches: OptionalPatch[];
-  defaultChoice?: string;
   allowMultiple?: boolean; // If false, radio button behavior; if true, checkbox behavior
+  defaultChoice?: string; // styling feature for baseline options, only one per category
 }
 
 interface CustomOptionsPanelProps {
@@ -89,28 +91,32 @@ const CustomOptionsPanel: React.FC<CustomOptionsPanelProps> = ({
   };
 
   const isPatchSelected = (patchId: string) => selectedPatches.includes(patchId);
-
   const getSelectedCount = () => selectedPatches.length;
 
   if (categories.length === 0) {
     return null;
   }
 
+  // string of defaultChoice debugging
+  React.useEffect(() => {
+    console.log('=== DEBUG: Categories and Default Choices ===');
+    categories.forEach(category => {
+      console.log(`Category: ${category.id} (${category.title})`);
+      console.log(`  defaultChoice: "${category.defaultChoice}"`);
+      console.log(`  patches in this category:`);
+      category.patches.forEach(patch => {
+        console.log(`    patch.id: "${patch.id}"`);
+        console.log(`    patch.name: "${patch.name}"`);
+        console.log(`    matches defaultChoice: ${category.defaultChoice === patch.id}`);
+      });
+      console.log('---');
+    });
+  }, [categories]);
+
+
   return (
     <div className="w-full max-w-2xl ">
-      {/* Toggle Button */}
-      {/* <button
-        onClick={() => setIsExpanded(!isExpanded)}
-        disabled={isDisabled}
-        className={`
-          w-full px-6 py-4 rounded-lg font-medium text-lg transition-all nicer-btn
-          ${isDisabled 
-            ? 'text-gray cursor-not-allowed' 
-            : 'text-white'
-          }
-          ${isExpanded ? 'rounded-b-none' : ''}
-        `}
-      > */}
+
         <div className="flex items-center justify-between p-2">
           <h3>Number of Custom Options</h3>
           <div className="flex items-center space-x-2">
@@ -119,19 +125,9 @@ const CustomOptionsPanel: React.FC<CustomOptionsPanelProps> = ({
                 {getSelectedCount()} selected
               </span>
             )}
-            {/* <svg 
-              className={`w-5 h-5 transform transition-transform ${isExpanded ? 'rotate-180' : ''}`}
-              xmlns="http://www.w3.org/2000/svg" 
-              fill="none" 
-              viewBox="0 0 24 24" 
-              stroke="currentColor"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-            </svg> */}
           </div>
         </div>
-      {/* </button> */}
-
+ 
       {/* Options Panel */}
       {isExpanded && (
         <div className="">
@@ -149,51 +145,56 @@ const CustomOptionsPanel: React.FC<CustomOptionsPanelProps> = ({
                 )}
 
                 <div className="d-flex flex-row flex-wrap justify-content-evenly">
-                  {category.patches.map((patch) => (
-                    <label 
-                      key={patch.id}
-                      className={`
-                        p-2 d-flex flex-column option-box
-                        ${isPatchSelected(patch.id) 
-                          ? 'chosen-box' 
-                          : 'unchosen-box'
-                        }
-                        ${isDisabled ? 'cursor-not-allowed opacity-50' : ''}
-                      `}
-                    >
-                      <input
-                        type={category.allowMultiple ? "checkbox" : "radio"}
-                        name={category.allowMultiple ? undefined : `category-${category.id}`}
-                        checked={isPatchSelected(patch.id)}
-                        onChange={() => handlePatchToggle(patch.id, category.id)}
-                        disabled={isDisabled}
-                        className={category.allowMultiple ? "hidden-checkbox" : "hidden-radio"}
-                      />
-                      
-                      <div className="">
-                        <div className="font-medium text-white">
-                          {patch.name}
-                        </div>
-                        {/* <div className="text-sm text-gray-300 mt-1">
-                          {patch.description}
-                        </div> */}
-                      </div>
-                      {/* Preview button, loaded from public/previews */}
-                      {patch.previewImage && (
-                        <button
-                          type="button"
-                          onClick={(e) => {
-                            e.preventDefault();
-                            handlePreviewClick(patch);
-                          }}
+                  
+                  {category.patches.map((patch) => {
+                    const isDefaultPatch = category.defaultChoice === patch.name;
+                    const labelClasses = `p-2 d-flex flex-column option-box unchosen-box ${isDefaultPatch ? 'default-option' : ''}`;
+
+                    return (
+                      <label 
+                        key={patch.id}
+                        className={labelClasses}
+                      >
+                        <input
+                          type={category.allowMultiple ? "checkbox" : "radio"}
+                          name={category.allowMultiple ? undefined : `category-${category.id}`}
+                          checked={isPatchSelected(patch.id)}
+                          onChange={() => handlePatchToggle(patch.id, category.id)}
                           disabled={isDisabled}
-                          className="mx-auto px-2 py-2 text-white nicer-btn"
-                        >
-                          Preview
-                        </button>
-                      )}
-                    </label>
-                  ))}
+                          className={category.allowMultiple ? "hidden-checkbox" : "hidden-radio"}
+                        />
+                        
+                        <div className="">
+                          <div className="font-medium text-white">
+                            {patch.name}
+                          </div>
+                          {/* <div className="text-sm text-gray-300 mt-1">
+                            {patch.description}
+
+                            // this may end up not getting used
+                          
+                          </div> */}
+                        </div>
+                        {/* Preview button, loaded from public/previews */}
+                        
+                        {/* not enough preview images exist right now */}
+                        
+                        {/* {patch.previewImage && (
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.preventDefault();
+                              handlePreviewClick(patch);
+                            }}
+                            disabled={isDisabled}
+                            className="mx-auto px-2 py-2 text-white nicer-btn"
+                          >
+                            Preview
+                          </button>
+                        )} */}
+                      </label>
+                    );
+                  })}
                 </div>
 
                 {category.patches.length === 0 && (
@@ -216,7 +217,9 @@ const CustomOptionsPanel: React.FC<CustomOptionsPanelProps> = ({
             </div>
           )}
 
-          {/* Image Preview Modal! */}
+          {/* Image Preview Modal
+          moot until preview button is enabled again, line 165
+          */}
             {modalOpen && modalProps && (
               <ImagePreviewModal
                 isOpen={modalOpen}

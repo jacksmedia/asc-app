@@ -1,4 +1,5 @@
-// code authored by Claude Sonnet 4
+// useOptionalPatches.ts
+// code developed with Claude Sonnet 4
 import { useState, useEffect } from 'react';
 import JSZip from 'jszip';
 import { OptionalPatch, PatchCategory } from '@/components/CustomOptionsPanel';
@@ -12,6 +13,7 @@ interface OptionalPatchesConfig {
     allowMultiple?: boolean;
     zipFile?: string; // Specific ZIP file for this category
     filePattern?: RegExp; // Pattern to match files in ZIP
+    defaultChoice?: string; // needed for baseline option styling
   }[];
 }
 
@@ -103,7 +105,8 @@ export const useOptionalPatches = (config: OptionalPatchesConfig) => {
               title: categoryConfig.title,
               description: categoryConfig.description,
               patches: patches.sort((a, b) => a.name.localeCompare(b.name)),
-              allowMultiple: categoryConfig.allowMultiple ?? true
+              allowMultiple: categoryConfig.allowMultiple ?? true,
+              defaultChoice: categoryConfig.defaultChoice
             });
           }
         } else if (config.zipFiles) {

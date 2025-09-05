@@ -1,4 +1,4 @@
-// PlusPatcher.tsx developed with Claude Sonnet 4
+// MainPatcher.tsx developed with Claude Sonnet 4
 import React, { useEffect, useMemo, useState } from 'react';
 import JSZip from 'jszip';
 import SpinnerOverlay from '@/components/SpinnerOverlay';
@@ -24,13 +24,12 @@ type RomState = {
   originalCRC32: string; // previously discrete state
 };
 
-export default function PatchPage() {
+export default function MainPatcher() {
   const [patches, setPatches] = useState<Patch[]>([]);
   const [romState, setRomState] = useState<RomState | null>(null); // Stores ROM + patch info
   const [isPatching, setIsPatching] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [loadingPatches, setLoadingPatches] = useState(true);
-  const [stylingDefaults, setStylingDefaults] = useState(true);
   const [selectedOptionalPatches, setSelectedOptionalPatches] = useState<string[]>([]);
 
   // Optional patches by category
@@ -42,7 +41,7 @@ export default function PatchPage() {
         description: 'Changes hero sprites & portraits',
         allowMultiple: false,
         zipFile: 'Graphics.zip',
-        defaultChoice: '',
+        defaultChoice: 'FF6ASC A',
         hasManifest: false
         // manifestPath: (patchName: string) => `/manifests/${patchName}-manifest.txt`
         // filePattern: /Style/i // can be used filter a multi-catergory archive
@@ -53,7 +52,7 @@ export default function PatchPage() {
         description: 'Mild and Insane vs Normal',
         allowMultiple: false,
         zipFile: 'Difficulty.zip',
-        defaultChoice: '',
+        defaultChoice: 'FF6ASC Difficulty NORMAL',
         hasManifest: false
       },
       {
@@ -62,7 +61,7 @@ export default function PatchPage() {
         description: 'RoSoDude\'s Comprehensive ATB Enhancements, v1.03 & WIP v1.04',
         allowMultiple: false,
         zipFile: 'Active-Mode-Battle.zip',
-        defaultChoice: '',
+        defaultChoice: 'FF6 Vanilla ATB',
         hasManifest: false
       },
       {
@@ -120,18 +119,8 @@ export default function PatchPage() {
     getSelectedPatches
   } = useOptionalPatches(optionalPatchesConfig);
 
-  // these are the ASC default settings represented by "dummy" empty patch files
-  // matched by textContent (plaintext in the div element) rendered from
-  // their filenames once unzipped;
-  // these are only scoped here
-  const defaultOptions: string[] = ["FF6ASC A",
-    "FF6ASC Difficulty NORMAL",
-    "FF6 Vanilla ATB"
-  ];
-  // CSS class variable, see global.css
-  const defaultStyling ='default-option';
+  const defaultStyling ='chosen-box'; // adjusted to mock a choice & act correctly
 
-  
   useEffect(() => {
     // Loads main ASC patches
     const loadPatches = async () => {
@@ -188,43 +177,6 @@ export default function PatchPage() {
     loadPatches(); // kicks off the main rendering logic   
   }, []);
 
-
-
-  useEffect(() => {
-  // Selectively styles some components
-  const stylePatches = (defaultOptions: string[], defaultStyling: string): void => {
-    try {
-      setStylingDefaults(true);
-      
-      // Function to highlight default options; written w help from Claude Sonnet 4
-      const highlightDefaultOptions = (targetTexts: string[], highlightClass: string): void => {
-        // Get all div elements in the document
-        const divs: NodeListOf<HTMLDivElement> = document.querySelectorAll('div');
-
-        divs.forEach((div: HTMLDivElement) => {
-          // Check if this div contains the target text
-          if (targetTexts.includes(div.textContent?.trim() || '')) {
-            // Find the closest ancestor label element!! 🤯
-            const parentLabel: HTMLLabelElement | null = div.closest('label');
-            
-            if (parentLabel) {
-              // Add highlighting class to the parent label
-              parentLabel.classList.add(highlightClass);
-            }
-          }
-        });
-      };
-      highlightDefaultOptions(defaultOptions, defaultStyling);
-    } catch (err) {
-      console.error('Failed to style default options:', err);
-      setError('Failed to load main patch files.');
-    } finally {
-      setStylingDefaults(false);
-    }
-  };
-
-  stylePatches(defaultOptions, defaultStyling);
-}, []);
 
 //////////////////////////////////////
   const EXPECTED_CRC32 = '0A739766';  // current ASC-flavor-A CRC32
