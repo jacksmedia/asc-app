@@ -148,12 +148,19 @@ const CustomOptionsPanel: React.FC<CustomOptionsPanelProps> = ({
                   
                   {category.patches.map((patch) => {
                     const isDefaultPatch = category.defaultChoice === patch.name;
-                    const labelClasses = `p-2 d-flex flex-column option-box unchosen-box ${isDefaultPatch ? 'default-option' : ''}`;
+                    const isSelected = isPatchSelected(patch.id);
+                    // exquisitiely conditional CSS madness
+                    const classes = [
+                      'p-2', 'd-flex', 'flex-column', 'option-box',
+                      isSelected ? 'chosen-box' : 'unchosen-box',
+                      isDefaultPatch ? 'default-option' : '',
+                      isDisabled ? 'cursor-not-allowed opacity-50' : ''
+                    ].filter(Boolean).join(' ');
 
                     return (
                       <label 
                         key={patch.id}
-                        className={labelClasses}
+                        className={classes}
                       >
                         <input
                           type={category.allowMultiple ? "checkbox" : "radio"}
