@@ -58,9 +58,9 @@ export default function MainPatcher() {
       {
         id: 'battle-system',
         title: 'Active Mode Battle',
-        description: 'RoSoDude\'s Comprehensive ATB Enhancement, v1.03',
+        description: 'RoSoDude\'s Comprehensive ATB Enhancement',
         allowMultiple: false,
-        zipFile: 'Active-Mode-Battle.zip',
+        zipFile: 'ATB-Enhanced.zip',
         defaultChoice: 'FF6 Vanilla ATB',
         hasManifest: false
       },
