@@ -119,14 +119,15 @@ export default function MainPatcher() {
     getSelectedPatches
   } = useOptionalPatches(optionalPatchesConfig);
 
-  const defaultStyling ='chosen-box'; // adjusted to mock a choice & act correctly
+  // name of the core romhack patches' zip
+  const corePatches = '/FF6ASC.zip'
 
   useEffect(() => {
-    // Loads main ASC patches
+    // Loads main patches
     const loadPatches = async () => {
       try {
         setLoadingPatches(true);
-        const response = await fetch('/FF6ASC.zip');
+        const response = await fetch(corePatches);
         const zipData = await response.arrayBuffer();
         const zip = await JSZip.loadAsync(zipData);
         const patchEntries: Patch[] = [];
@@ -178,9 +179,6 @@ export default function MainPatcher() {
   }, []);
 
 
-//////////////////////////////////////
-  const EXPECTED_CRC32 = '0A739766';  // current ASC-flavor-A CRC32
-////////////////////////////////////// obv this changes per update
 
   // Detects & removes SMC/SFC copier header if present
   const removeHeaderIfPresent = (romData: Uint8Array): Uint8Array => {
@@ -214,10 +212,12 @@ export default function MainPatcher() {
       }
       console.log(`Found matching patch: ${matchingPatch.originalName}`);
 
-      // Expands uploaded rom to 6MB to fit FF6ASC
-      const expandedRom = headerlessRom.length < 6 * 1024 * 1024
+      // Expands uploaded rom to correct size for romhack
+      // value in MB below: 6MB for FF6ASC ; 2MB for FF4UP
+      const finalSize = 6;
+      const expandedRom = headerlessRom.length < finalSize * 1024 * 1024
         ? (() => {
-            const newRom = new Uint8Array(6 * 1024 * 1024);
+            const newRom = new Uint8Array(finalSize * 1024 * 1024);
             newRom.set(headerlessRom);
             return newRom;
           })()
