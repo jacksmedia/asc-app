@@ -1,0 +1,11 @@
+Mild difficulty: Apply this patch on top of your main hack file if you wish to make the game a bit easier. Mild difficulty is about on par with the original FF6. Veterans of FF6 might find this to be too easy,
+while others who are not as familiar with all the strategies of the original might find this skill more suitable.
+This skill adjusts the following things:
+
+-Monsters have slightly lower stats (more on par with the original FF6).
+-Monsters are a bit slower and less aggressive
+-Monster AI scaling will happen at higher levels when compared to the other difficulty levels, which means the monsters won't get much tougher until you are really overleveled.
+
+WARNING: If you are switching from Insane difficulty to Mild difficulty, start with a FRESH ROM file!  Do NOT apply mild difficulty on top of insane difficulty or vise versa. Doing so will cause
+some issues with monster behavior. That being said, you can switch the difficulty any time you want and keep using your old Save file.  Just make sure not to apply them over each other... If you wish
+to revert back to the default difficulty, start over from a fresh ROM file.

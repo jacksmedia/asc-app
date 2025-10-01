@@ -41,7 +41,7 @@ export default function MainPatcher() {
         description: 'Changes hero sprites & portraits',
         allowMultiple: false,
         zipFile: 'Graphics.zip',
-        defaultChoice: 'FF6ASC A',
+        defaultChoice: 'ASC-A Moogles',
         hasManifest: false
         // manifestPath: (patchName: string) => `/manifests/${patchName}-manifest.txt`
         // filePattern: /Style/i // can be used filter a multi-catergory archive
@@ -52,7 +52,7 @@ export default function MainPatcher() {
         description: 'Mild and Insane vs Normal',
         allowMultiple: false,
         zipFile: 'Difficulty.zip',
-        defaultChoice: 'FF6ASC Difficulty NORMAL',
+        defaultChoice: 'ASC Difficulty NORMAL',
         hasManifest: false
       },
       {
@@ -60,17 +60,8 @@ export default function MainPatcher() {
         title: 'Active Mode Battle',
         description: 'RoSoDude\'s Comprehensive ATB Enhancement',
         allowMultiple: false,
-        zipFile: 'ATB-Enhanced.zip',
+        zipFile: 'ATB-Comprehensive.zip',
         defaultChoice: 'FF6 Vanilla ATB',
-        hasManifest: false
-      },
-      {
-        id: 'enhancements',
-        title: 'Enhancements to Menu and Combat',
-        description: 'Choose one or both!',
-        allowMultiple: true,
-        zipFile: 'Enhancements.zip',
-        defaultChoice: '',
         hasManifest: false
       },
       {
