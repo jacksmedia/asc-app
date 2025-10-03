@@ -48,14 +48,28 @@ const CustomOptionsPanel: React.FC<CustomOptionsPanelProps> = ({
   } | null>(null);
 
   const handlePreviewClick = (patch: OptionalPatch) => {
+  // if (patch.previewImage) {
+  // Creates manifest path for fonts category
+  const manifestPath = ( patch.category === 'difficulty' ||
+                  patch.category === 'battle-system' ||
+                  patch.category === 'fonts' ||
+                  patch.category === 'music' ||
+                  patch.category === 'other' ||
+                  patch.category === 'magic' )
+    ? `/manifests/${patch.name}.txt`  // Pattern for patch.id matches manifest title
+    : ``;
+  console.log(`Generated ${manifestPath} for manifest text file name.`)
   if (patch.previewImage) {
-    // Creates manifest path for fonts category
-    const manifestPath = patch.category === 'fonts' 
-      ? `/manifests/${patch.id}-manifest.txt`  // Pattern for patch.id matches manifest title
-      : ``;
-    console.log(`Generated ${manifestPath} for manifest text file name.`)
     setModalProps({
       src: patch.previewImage,
+      title: patch.name,
+      description: patch.description,
+      manifestPath: manifestPath
+    });
+    setModalOpen(true);
+  } else {
+    setModalProps({
+      src: '/placeholder-image.png',
       title: patch.name,
       description: patch.description,
       manifestPath: manifestPath
@@ -183,10 +197,7 @@ const CustomOptionsPanel: React.FC<CustomOptionsPanelProps> = ({
                           </div> */}
                         </div>
                         {/* Preview button, loaded from public/previews */}
-                        
-                        {/* not enough preview images exist right now */}
-                        
-                        {/* {patch.previewImage && (
+                        {patch.previewImage && (
                           <button
                             type="button"
                             onClick={(e) => {
@@ -196,9 +207,9 @@ const CustomOptionsPanel: React.FC<CustomOptionsPanelProps> = ({
                             disabled={isDisabled}
                             className="mx-auto px-2 py-2 text-white nicer-btn"
                           >
-                            Preview
+                            Info
                           </button>
-                        )} */}
+                        )}
                       </label>
                     );
                   })}

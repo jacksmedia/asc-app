@@ -41,9 +41,9 @@ export default function MainPatcher() {
         description: 'Changes hero sprites & portraits',
         allowMultiple: false,
         zipFile: 'Graphics.zip',
-        defaultChoice: 'ASC-A Moogles',
-        hasManifest: false
-        // manifestPath: (patchName: string) => `/manifests/${patchName}-manifest.txt`
+        defaultChoice: 'ASC A Moogles',
+        hasManifest: false,
+        manifestPath: (patchName: string) => `/manifests/${patchName}.txt`
         // filePattern: /Style/i // can be used filter a multi-catergory archive
       },
       {
@@ -53,7 +53,8 @@ export default function MainPatcher() {
         allowMultiple: false,
         zipFile: 'Difficulty.zip',
         defaultChoice: 'ASC Difficulty NORMAL',
-        hasManifest: false
+        hasManifest: true,
+        manifestPath: (patchName: string) => `/manifests/${patchName}.txt`
       },
       {
         id: 'battle-system',
@@ -62,7 +63,8 @@ export default function MainPatcher() {
         allowMultiple: false,
         zipFile: 'ATB-Comprehensive.zip',
         defaultChoice: 'FF6 Vanilla ATB',
-        hasManifest: false
+        hasManifest: true,
+        manifestPath: (patchName: string) => `/manifests/${patchName}.txt`
       },
       {
         id: 'fonts',
@@ -80,7 +82,8 @@ export default function MainPatcher() {
         allowMultiple: true,
         zipFile: 'Music-Options.zip',
         defaultChoice: '',
-        hasManifest: false
+        hasManifest: true,
+        manifestPath: (patchName: string) => `/manifests/${patchName}.txt`
       },
       {
         id: 'other',
@@ -89,16 +92,18 @@ export default function MainPatcher() {
         allowMultiple: true,
         zipFile: 'Other-Patches.zip',
         defaultChoice: '',
-        hasManifest: false
+        hasManifest: true,
+        manifestPath: (patchName: string) => `/manifests/${patchName}.txt`
       },
       {
-        id: 'music',
+        id: 'magic',
         title: 'More Magic',
         description: 'Give Additional Heroes Magic (Use Sparingly to Avoid a Nerfed Game)',
         allowMultiple: true,
         zipFile: 'More-Magic.zip',
         defaultChoice: '',
-        hasManifest: false
+        hasManifest: true,
+        manifestPath: (patchName: string) => `/manifests/${patchName}.txt`
       }
     ]
   }), []);
