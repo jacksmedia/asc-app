@@ -4,8 +4,6 @@ Pistols, Shotgun, Bows, and Nunchucks.
 And replace them with the original weapons from ASC 1.0:
 Flails, Dice, Darts, and the Hawkeye.
 
-INSTRUCTIONS: It is recommended you apply this patch LAST.  Otherwise, if you apply another patch later such as the "Moogle Returns" optional patch, some item names will become jibberish.
-
 WARNING: The guide for version 2.0 will have a lot of incorrect item names and information if you apply this patch (especially for the treasures, colosseum bets, and monster drops/steals). Just keep
 this in mind as you go through the game with this patch applied.
 
