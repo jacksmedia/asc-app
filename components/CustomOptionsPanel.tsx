@@ -196,6 +196,17 @@ const CustomOptionsPanel: React.FC<CustomOptionsPanelProps> = ({
                           
                           </div> */}
                         </div>
+                        {/* UX Select button, with duplicate actions from the hidden <input> above*/}
+                        <button
+                          onClick={(e) => {
+                              e.preventDefault();
+                              handlePatchToggle(patch.id, category.id);
+                            }}
+                          disabled={isDisabled}
+                          className="mx-auto px-5 py-2 text-white nicer-btn"
+                        >
+                          Select
+                        </button>
                         {/* Preview button, loaded from public/previews */}
                         {patch.previewImage && (
                           <button

@@ -293,8 +293,8 @@ const ImagePreviewModal: React.FC<ImagePreviewModalProps> = ({
         .manifest-content {
           flex: 1;
           padding: 15px 20px;
-          overflow-y: overlay;
-          overflow-x: hidden;
+          overflow-y: scroll;
+          overflow-x: scroll;
           min-height: 0; /* needed for flex shrinking */
           max-height: 100%; /* locked to parent element */
         }
@@ -321,7 +321,7 @@ const ImagePreviewModal: React.FC<ImagePreviewModalProps> = ({
           display: flex;
           flex-direction: column;
           align-items: center;
-          justify-content: center;
+          justify-content: left;
           height: 100px;
           color: #ccc;
         }
@@ -403,6 +403,7 @@ const ImagePreviewModal: React.FC<ImagePreviewModalProps> = ({
 
           .manifest-text {
             font-size: 0.75rem;
+            justify-content: left;
           }
         }
 
