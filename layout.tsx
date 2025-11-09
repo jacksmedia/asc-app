@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 const navLinks = [
   { href: '/', label: 'Home' },
-  // { href: 'https://ff6asc.vercel.app/guides.html', label: 'Guides' },
+  { href: 'guides', label: 'Guides' },
   { href: '/discord', label: 'Discord' }
 ];
 

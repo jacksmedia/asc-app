@@ -2,43 +2,63 @@ import { NextPage } from 'next';
 import Layout from '@/layout';
 import TitleScreen from "@/components/TitleScreen";
 
-const Discord: NextPage = () => {
+const Guides: NextPage = () => {
   return (
     <Layout>      
       <div className='guides-bg'>
-        <h1 className="">FF4 Ultima Guides</h1>
+        <h1 className="">"FF6 A Soldier's Contingency" Guides</h1>
           <TitleScreen />
-        <h3>Guides written by LilyNo3 of Team Ultima</h3>
-        <ul>
-          <li>
-			      <a target="_blank" href="https://docs.google.com/document/d/1O77TDKTG1dWDrHaT40NECik6Cz3rtYmUoazxTQPxnIY/edit?tab=t.0">
-				      FF4U Commands Guide
-			      </a>
-		      </li>
-		      <li>
-			      <a target="_blank" href="https://docs.google.com/document/d/1Z4O08DPN0JhQ4E0d2wbQYOZM4n814V5DyhyWqTVPSkM/edit?usp=sharing">
-				      FF4U Overall Guide
-			      </a>
-		      </li>
-		      <li>
-			      <a target="_blank" href="https://docs.google.com/spreadsheets/d/19IU_ccvRXbx7BrihScF6c0JQ-7mFVNQR96KukOGrXkU/edit?gid=589265229#gid=589265229">
-				      FF4U Boss Guide 
-			      </a>
-		      </li>
-		      <li>
-			      <a target="_blank" href="https://docs.google.com/spreadsheets/d/1NDR7HuKJXEq6X0EsmXlQ52uE9wctkn9qvZKSTYc9bcI/edit?gid=0#gid=0">
-				      FF4U Drop/Steal Table
-			      </a>
-		      </li>
-		      <li>
-			      <a target="_blank" href="https://docs.google.com/spreadsheets/d/1gxxapWwliJwzvp8TSYJL2qRT3vvJhZciRpN0bXcEDFU/edit?gid=40660744#gid=40660744">
-				      FF4U Item Checklist
-			      </a>
-		      </li>
+        <p>All docs by the author of this romhack, Lightning Hunter</p>
+        <ul className='guides-list'>
+			<li>
+				<a href="/items">
+					Item List
+				</a>
+			</li>
+			<li>
+				<a href="/bestiary">
+					Bestiary List
+				</a>
+			</li>
+			<li>
+				<a href="/rage">
+					Rage List
+				</a>
+			</li>
+			<li>
+				<a href="/treasure">
+					Treasure Checklist
+				</a>
+			</li>
+			<li>
+				<a href="/morph">
+					Morph List
+				</a>
+			</li>
+			<li>
+				<a href="/blue-magic">
+					Blue Magic List
+				</a>
+			</li>
+			<li>
+				<a href="/colosseum">
+					Colosseum List
+				</a>
+			</li>
+			<li>
+				<a href="/walkthrough">
+					Full Game Walkthrough
+				</a>
+			</li>
         </ul>
+		<h2>
+			<a target="_blank" href="FF6-ASC-Guides.zip" className='special-link'>
+				Download all Guides (.docx) in a .zip file
+			</a>
+		</h2>
       </div>
     </Layout>
   );
 };
 
-export default Discord;
+export default Guides;

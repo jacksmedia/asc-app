@@ -120,12 +120,27 @@ main div {
 }
 
 .nicer-btn {
-  border-radius: 10px;;
+  border-radius: 10px;
 }
 
 /* ImagePreviewModal */
 /* all styling is local! */
 
+
+/* List formatting per page */
+.guides-list li a {
+  font-size: 1.6em;
+  color:#dfc325;
+}
+
+.guides-list li {
+  list-style: none;
+  padding-bottom: 0.5em;
+}
+
+.special-link {
+  color: white;
+}
 
 /* Workaround for the overhyped garbage that is Bootstrap columns */
 .two-column-layout {
@@ -198,9 +213,9 @@ main div {
 /* index.tsx title styling */
 .app-title {
   line-height: 1;
-  color: #7aafe8;
+  color: #ffc;
   font-size: 50px;
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 1), 4px 4px 0px #5a84b0;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 1), 4px 4px 0px #bb8;
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -234,5 +249,5 @@ main div {
   background: linear-gradient(#112,#000, #000);
 }
 .guides-bg {
-  background: linear-gradient(#112,#606, #000);
+  background: linear-gradient(#9d1a3f, #710f2b, #000);
 }
