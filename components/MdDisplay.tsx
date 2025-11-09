@@ -1,4 +1,5 @@
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { useState, useEffect } from 'react';
 
 interface MdDisplayProp {
@@ -16,7 +17,7 @@ function MdDisplay({mdFile}: MdDisplayProp) {
     
     return(
         <>
-        <ReactMarkdown>
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>
             {content}
         </ReactMarkdown>
         
@@ -29,6 +30,13 @@ function MdDisplay({mdFile}: MdDisplayProp) {
         }
         strong {
         font-size: 130%;
+        }
+        table, th {
+        margin-bottom: 20px;
+        border: 1px solid #ffc;
+        }
+        td, th {
+        padding-left: 2px;
         }
         `}</style>
         </>

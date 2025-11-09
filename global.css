@@ -142,6 +142,18 @@ main div {
   color: white;
 }
 
+/* tables */
+
+/* striped rows */
+tr:nth-child(even) {
+  background-color: rgba(255,200,200,0.3);
+}
+
+/* striped columns */
+td:nth-child(even) {
+  background-color: rgba(128,128,128,0.4);
+}
+
 /* Workaround for the overhyped garbage that is Bootstrap columns */
 .two-column-layout {
   display: grid;

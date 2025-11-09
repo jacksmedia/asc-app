@@ -2,33 +2,32 @@
 
 This is a full monster list along with all the stats of the monsters and the items they drop and/or you can steal from them (exported from FF3usME).
 
-**NOTE:** Duplicate monsters that appear in a blue box are the monsters for the alternate monster pack. Ignore these if you aren’t using the alt monster pack.
+**NOTE:** Duplicate entries are the monster names for Flavor B.
 
 F=fire, I=ice, L=lightning, P=poison, W=wind, H=Holy, E=earth, w=water
-
-																		
+		
 
 | ID | Name | HP | MP | Level | Exp | Gold | Absorb | Null | Weak | Rare Steal | Common Steal | Rare Drop | Common Drop |
 | ----- | :---- | :---- | :---- | :---- | :---- | :---- | :---: | :---: | :---: | ----- | ----- | ----- | ----- |
 | **000** | **Guard** | 60 | 15 | 5 | 20 | 20 | \- | \- | \---P---- | Potion | Tonic | Tonic | \- |
 | **001** | **Soldier** | 115 | 50 | 11 | 28 | 35 | \- | \- | \---P---- | Potion | Tonic | Tonic | \- |
 | **002** | **Templar** | 440 | 50 | 11 | 45 | 96 | \- | \- | \---P---- | Potion | Tonic | Tonic | \- |
-| **003** | **Ninja** | 1800 | 130 | 27 | 572 | 700 | \- | \- | \--L--p-- | Prayer Beads | Kunai Darts | Kunai Darts | \- |
+| **003** | **Ninja** | 1800 | 130 | 27 | 572 | 700 | \- | \- | \--L--P-- | Prayer Beads | Kunai Darts | Kunai Darts | \- |
 | **004** | **Samurai** | 4800 | 500 | 40 | 1545 | 988 | \- | \- | \---P---- | Murasame | Kotetsu | Kotetsu | \- |
-| **004** | **Yokai**  | 4800 | 500 | 40 | 1545 | 988 | \---P---- | \- | F----p-- | Murasame | Kotetsu | Kotetsu | \- |
-| **005** | **Orog** | 3650 | 250 | 30 | 812 | 716 | \---P---- | \- | F----p-- | Amulet | Revivify | Revivify | \- |
+| **004** | **Yokai**  | 4800 | 500 | 40 | 1545 | 988 | \---P---- | \- | F----P-- | Murasame | Kotetsu | Kotetsu | \- |
+| **005** | **Orog** | 3650 | 250 | 30 | 812 | 716 | \---P---- | \- | F----P-- | Amulet | Revivify | Revivify | \- |
 | **006** | **Mag Roader** | 1325 | 100 | 19 | 150 | 302 | \-I------ | \- | F------- | Shuriken | Smoke Bomb | \- | \- |
-| **007** | **BloodBones** | 5963 | 500 | 46 | 1756 | 1555 | \---P---- | \- | F----p-- | Murasame | Kotetsu | Murasame | \- |
+| **007** | **BloodBones** | 5963 | 500 | 46 | 1756 | 1555 | \---P---- | \- | F----P-- | Murasame | Kotetsu | Murasame | \- |
 | **007** | **Ronin** | 5963 | 500 | 46 | 1756 | 1555 | \- | \- | \---P---- | Murasame | Kotetsu | Murasame | \- |
 | **008** | **Knocker** | 202 | 100 | 10 | 51 | 186 | \- | \- | \---P---- | Guardian | Tonic | Tonic | \- |
 | **009** | **Retainer** | 9000 | 2600 | 59 | 2300 | 2000 | \- | \- | \- | Samurai Mail | Murasame | Tempest | \- |
 | **010** | **Joker** | 2782 | 180 | 39 | 725 | 485 | \-------w | \----W--- | \-I-P---- | Hi-Ether | Ether | Shuriken | \- |
 | **011** | **Cave Ape** | 300 | 100 | 9 | 65 | 150 | \- | \- | \-I-P---- | Potion | Tonic | Tonic | \- |
-| **012** | **Apokryphos** | 1985 | 195 | 26 | 600 | 482 | \- | \- | \--L--p-w | Sniper Sight | Potion | Potion | \- |
-| **013** | **Oni** | 11380 | 900 | 56 | 2950 | 600 | \---P---- | \- | \-----p-- | Gold Hairpin | Hi-Ether | X-Ether | \- |
-| **014** | **Shadow** | 337 | 90 | 12 | 42 | 105 | \---P---- | \- | F----p-- | Remedy | Tonic | Tonic | \- |
-| **015** | **Keeper** | 1000 | 190 | 13 | 318 | 350 | \---P---- | \- | \-----p-- | Potion | Revivify | Revivify | \- |
-| **016** | **DeathRider** | 8320 | 200 | 29 | 1005 | 1876 | \---P---- | \- | F----p-- | Diamond Helm | Potion | Potion | \- |
+| **012** | **Apokryphos** | 1985 | 195 | 26 | 600 | 482 | \- | \- | \--L--P-w | Sniper Sight | Potion | Potion | \- |
+| **013** | **Oni** | 11380 | 900 | 56 | 2950 | 600 | \---P---- | \- | \-----P-- | Gold Hairpin | Hi-Ether | X-Ether | \- |
+| **014** | **Shadow** | 337 | 90 | 12 | 42 | 105 | \---P---- | \- | F----P-- | Remedy | Tonic | Tonic | \- |
+| **015** | **Keeper** | 1000 | 190 | 13 | 318 | 350 | \---P---- | \- | \-----P-- | Potion | Revivify | Revivify | \- |
+| **016** | **DeathRider** | 8320 | 200 | 29 | 1005 | 1876 | \---P---- | \- | F----P-- | Diamond Helm | Potion | Potion | \- |
 | **017** | **Grunt** | 152 | 50 | 10 | 70 | 128 | \- | \- | \---P---- | Potion | Tonic | Tonic | \- |
 | **018** | **Mu** | 133 | 100 | 7 | 43 | 69 | \- | \- | \- | Tonic | Antidote | Tonic | \- |
 | **019** | **Were-Rat** | 29 | 50 | 4 | 11 | 10 | \- | \- | F------- | Tonic | Tonic | Tonic | \- |
@@ -46,23 +45,23 @@ F=fire, I=ice, L=lightning, P=poison, W=wind, H=Holy, E=earth, w=water
 | **031** | **Chimera** | 3250 | 200 | 22 | 1000 | 750 | \- | \- | \- | Hi-Ether | Ether | Ether | \- |
 | **032** | **Behemoth** | 5800 | 180 | 28 | 1500 | 500 | \- | \- | \-I------ | Hermes Shoes | \- | X-Potion | \- |
 | **033** | **Minotaur** | 1550 | 82 | 26 | 500 | 375 | \- | \- | \- | Knuckles | Potion | Ether | \- |
-| **033** | **Necrotaur** | 1550 | 82 | 26 | 500 | 375 | \---P---- | \- | F----p-- | Knuckles | Potion | Ether | \- |
+| **033** | **Necrotaur** | 1550 | 82 | 26 | 500 | 375 | \---P---- | \- | F----P-- | Knuckles | Potion | Ether | \- |
 | **034** | **Pterodon** | 645 | 70 | 12 | 340 | 300 | \- | \- | F------- | Potion | Tonic | Tonic | \- |
-| **035** | **FossilFang** | 2800 | 219 | 20 | 332 | 1800 | \---P---- | \- | FI---p-w | Amulet | Revivify | Revivify | \- |
-| **036** | **WhiteDrake** | 4595 | 400 | 44 | 2700 | 1169 | \-----p-- | \- | F--P---- | Drake Suit | Ether | Potion | \- |
-| **036** | **Sun Drake** | 4595 | 400 | 44 | 2700 | 1169 | \-----p-- | \- | F--P---- | Drake Suit | Ether | Potion | \- |
+| **035** | **FossilFang** | 2800 | 219 | 20 | 332 | 1800 | \---P---- | \- | FI---P-w | Amulet | Revivify | Revivify | \- |
+| **036** | **WhiteDrake** | 4595 | 400 | 44 | 2700 | 1169 | \-----P-- | \- | F--P---- | Drake Suit | Ether | Potion | \- |
+| **036** | **Sun Drake** | 4595 | 400 | 44 | 2700 | 1169 | \-----P-- | \- | F--P---- | Drake Suit | Ether | Potion | \- |
 | **037** | **DoomDragon** | 18008 | 10000 | 54 | 8000 | 2500 | \- | \---P---- | \- | Skull Helmet | Pod Bracelet | Hi-Ether | \- |
 | **038** | **Brachosaur** | 46050 | 51420 | 77 | 19333 | 0 | \- | \- | \-I------ | Muscle Belt | Hi-Ether | Ribbon | \- |
 | **039** | **Tyranosaur** | 13300 | 420 | 57 | 8800 | 0 | \- | \- | \-I------ | Phoenix Down | \- | Potion | \- |
 | **040** | **Dark Wind** | 42 | 50 | 5 | 15 | 30 | \- | \- | F------- | Tonic | Tonic | Tonic | \- |
-| **041** | **Ghast** | 2870 | 300 | 38 | 892 | 455 | \---P---- | \- | F----p-- | Ether | Potion | Potion | \- |
+| **041** | **Ghast** | 2870 | 300 | 38 | 892 | 455 | \---P---- | \- | F----P-- | Ether | Potion | Potion | \- |
 | **042** | **Sahagin** | 362 | 60 | 15 | 156 | 200 | \- | \- | \----W--- | Remedy | Eyedrops | Eyedrops | \- |
 | **043** | **Colossus** | 7990 | 233 | 39 | 2000 | 1221 | \------E- | \- | \- | Gaia Gear | Potion | Bone Mallet | \- |
-| **044** | **Zenene** | 625 | 50 | 26 | 190 | 255 | \- | \---P---- | \-----p-- | Remedy | Soft | Soft | \- |
+| **044** | **Zenene** | 625 | 50 | 26 | 190 | 255 | \- | \---P---- | \-----P-- | Remedy | Soft | Soft | \- |
 | **045** | **Trapper** | 555 | 80 | 19 | 200 | 182 | \- | \- | \--L----w | Ether | Smoke Bomb | \- | \- |
 | **046** | **Hornet** | 200 | 50 | 6 | 55 | 55 | \- | \- | F------- | Remedy | Tonic | Soft | \- |
 | **047** | **CrassHoppa** | 295 | 80 | 11 | 62 | 120 | \- | \- | F---W--- | Remedy | Tonic | Antidote | \- |
-| **048** | **Wraith** | 2450 | 140 | 26 | 896 | 482 | \---P---- | \- | F----p-- | Thief Knife | Sleeping Bag | Water Edge | \- |
+| **048** | **Wraith** | 2450 | 140 | 26 | 896 | 482 | \---P---- | \- | F----P-- | Thief Knife | Sleeping Bag | Water Edge | \- |
 | **049** | **Gilomantis** | 1350 | 110 | 26 | 500 | 603 | \- | \- | F------- | Venom Claw | \- | Venom Claw | \- |
 | **050** | **Trilium** | 802 | 100 | 14 | 202 | 125 | \-------w | \---P---- | F------- | Remedy | Antidote | Antidote | \- |
 | **050** | **Mandrake** | 802 | 100 | 14 | 202 | 125 | \-------w | \---P---- | F------- | Remedy | Antidote | Antidote | \- |
@@ -98,8 +97,8 @@ F=fire, I=ice, L=lightning, P=poison, W=wind, H=Holy, E=earth, w=water
 | **077** | **Repo Man** | 38 | 50 | 5 | 20 | 22 | \- | \- | \---P---- | Tonic | Tonic | Tonic | \- |
 | **078** | **Harvester** | 496 | 85 | 16 | 42 | 1533 | \- | \- | \---P---- | DragoonBoots | Star Pendant | Star Pendant | \- |
 | **079** | **Bolla** | 17975 | 1555 | 58 | 5652 | 2250 | \---P---- | \- | \- | Muscle Belt | Antidote | Remedy | \- |
-| **080** | **Naude** | 3000 | 195 | 24 | 100 | 500 | \-I------ | \---PW--- | F-L--p-- | X-Ether | Ether | \- | Ether |
-| **081** | **Gargoyle** | 3755 | 105 | 45 | 1052 | 452 | \- | \---P---- | \-----p-- | Remedy | \- | Potion | \- |
+| **080** | **Naude** | 3000 | 195 | 24 | 100 | 500 | \-I------ | \---PW--- | F-L--P-- | X-Ether | Ether | \- | Ether |
+| **081** | **Gargoyle** | 3755 | 105 | 45 | 1052 | 452 | \- | \---P---- | \-----P-- | Remedy | \- | Potion | \- |
 | **082** | **Red Roader** | 296 | 100 | 18 | 155 | 289 | \- | \- | \-I------ | Fire Skean | Echo Screen | Echo Screen | \- |
 | **083** | **Zozo Gigas** | 3000 | 60 | 16 | 500 | 600 | \------E- | \- | \---P---- | Gigas Glove | Potion | Potion | \- |
 | **084** | **Tonberry** | 8000 | 15500 | 27 | 3000 | 3333 | \-------w | \- | F-L----- | Tintinabulum | Lantern | Tintinabulum | Pug Cloak |
@@ -109,7 +108,7 @@ F=fire, I=ice, L=lightning, P=poison, W=wind, H=Holy, E=earth, w=water
 | **088** | **Buffalax** | 3152 | 218 | 26 | 752 | 352 | \- | \- | F------w | Potion | Tonic | Ether | \- |
 | **089** | **Aspik** | 355 | 330 | 12 | 40 | 108 | \-------w | \- | F------- | Remedy | Tonic | Potion | \- |
 | **089** | **Odd Eyes** | 355 | 330 | 12 | 40 | 108 | \-------w | \- | F------- | Remedy | Tonic | Potion | \- |
-| **090** | **Ghost** | 258 | 70 | 10 | 43 | 70 | \---P---- | \- | F----p-- | Potion | Tonic | Tonic | \- |
+| **090** | **Ghost** | 258 | 70 | 10 | 43 | 70 | \---P---- | \- | F----P-- | Potion | Tonic | Tonic | \- |
 | **091** | **Baretta** | 4050 | 120 | 33 | 796 | 252 | \- | \- | \- | Remedy | Antidote | Soft | \- |
 | **092** | **Sand Ray** | 76 | 50 | 6 | 38 | 45 | \- | \- | \-I-----w | Tonic | Antidote | Antidote | \- |
 | **093** | **Areneid** | 95 | 50 | 6 | 32 | 72 | \- | \- | \-I-----w | Antidote | Tonic | Tonic | \- |
@@ -187,7 +186,7 @@ F=fire, I=ice, L=lightning, P=poison, W=wind, H=Holy, E=earth, w=water
 | **163** | **Intangir** | 10000 | 16000 | 28 | 0 | 0 | \- | \---PWpEw | \- | Phoenix Down | Remedy | \- | \- |
 | **164** | **Float Eye** | 1850 | 220 | 26 | 612 | 703 | \---P---- | \- | F----H-- | Revivify | Eyedrops | Eyedrops | \- |
 | **165** | **Mad Ogre** | 4500 | 180 | 33 | 1025 | 825 | \- | \- | \- | Bone Mallet | Green Cherry | Remedy | \- |
-| **166** | **Ging-Ryu** | 9257 | 444 | 44 | 2040 | 806 | \- | \-----p-- | \- | Dancing Claw | Soft | Warp Stone | \- |
+| **166** | **Ging-Ryu** | 9257 | 444 | 44 | 2040 | 806 | \- | \-----P-- | \- | Dancing Claw | Soft | Warp Stone | \- |
 | **167** | **Crawler** | 922 | 500 | 28 | 232 | 323 | \- | \- | \-I------ | Remedy | Potion | Potion | \- |
 | **168** | **Goblin** | 168 | 100 | 8 | 41 | 200 | \- | \- | \---P---- | Potion | Tonic | Tonic | \- |
 | **169** | **Neckhunter** | 2900 | 136 | 35 | 688 | 2850 | \- | \- | \---P---- | Mage Musket | Gale Bow | Boomerang | \- |
@@ -201,7 +200,7 @@ F=fire, I=ice, L=lightning, P=poison, W=wind, H=Holy, E=earth, w=water
 | **177** | **Pumpkin** | 1253 | 128 | 25 | 356 | 497 | \- | \- | F------- | Hi-Ether | Potion | Potion | \- |
 | **178** | **Tumbleweed** | 1 | 100 | 23 | 4 | 1 | \- | \- | \-------w | \- | \- | \- | \- |
 | **179** | **Coelecite** | 700 | 50 | 20 | 252 | 255 | F------- | \- | \-I------ | Potion | Tonic | \- | \- |
-| **180** | **Amarok** | 4275 | 200 | 32 | 612 | 412 | \- | F--P-p-- | \------Ew | \- | \- | Phoenix Down | \- |
+| **180** | **Amarok** | 4275 | 200 | 32 | 612 | 412 | \- | F--P-P-- | \------Ew | \- | \- | Phoenix Down | \- |
 | **181** | **Wight** | 425 | 84 | 12 | 50 | 150 | \---P---- | \- | F----H-- | Potion | Tonic | Tonic | \- |
 | **182** | **Warlock** | 395 | 120 | 13 | 185 | 108 | \---P---- | \- | F----H-- | Blizzard Rod | Tonic | Tonic | \- |
 | **183** | **Evil Oscar** | 8875 | 500 | 55 | 2800 | 1296 | \-ILPW-Ew | \- | F------- | X-Ether | Remedy | Remedy | \- |
@@ -315,7 +314,7 @@ F=fire, I=ice, L=lightning, P=poison, W=wind, H=Holy, E=earth, w=water
 | **283** | **Tentacle** | 8000 | 800 | 31 | 500 | 250 | F------- | \- | \-I-----w | \- | \- | \- | \- |
 | **284** | **Tomb Guard** | 35000 | 1721 | 37 | 1000 | 1000 | \---P---- | \-I------ | F------- | X-Potion | \- | Elixir | \- |
 | **285** | **Doom Gaze** | 55555 | 38000 | 68 | 5000 | 5000 | \-I-P---- | \- | F----H-- | \- | \- | \- | \- |
-| **286** | **Chadarnook** | 56000 | 9400 | 37 | 0 | 0 | \-----p-w | \- | F------- | \- | \- | \- | \- |
+| **286** | **Chadarnook** | 56000 | 9400 | 37 | 0 | 0 | \-----P-w | \- | F------- | \- | \- | \- | \- |
 | **287** | **Curley** | 16750 | 2000 | 47 | 1000 | 1000 | F------- | \- | \-I-P---w | X-Ether | Hi-Ether | \- | \- |
 | **288** | **Larry** | 12500 | 2000 | 47 | 1000 | 1000 | \-I--W--- | \- | F--P---- | X-Potion | Potion | \- | \- |
 | **289** | **Moe** | 14500 | 2000 | 47 | 1000 | 1000 | \--L----- | \- | \---P---- | Elixir | Elixir | \- | \- |
@@ -324,8 +323,8 @@ F=fire, I=ice, L=lightning, P=poison, W=wind, H=Holy, E=earth, w=water
 | **292** | **Yojimbo** | 45620 | 7400 | 61 | 1000 | 30000 | \- | \- | \---P---- | Murasame | Murasame | Offering | Offering |
 | **293** | **Lv30 Magic** | 4500 | 700 | 54 | 0 | 0 | \---P---- | \- | \-----H-- | Hi-Ether | Ether | Ether | \- |
 | **294** | **Odin** | 40000 | 1000 | 55 | 0 | 0 | \- | \- | \--L----- | \- | \- | Zantetsuken | Zantetsuken |
-| **295** | **Zalera** | 65000 | 4800 | 73 | 0 | 0 | \-I-P---- | \- | \-----p-- | Safety Bit | X-Ether | Zanmato | Zanmato |
-| **296** | **Minerva** | 59000 | 19000 | 68 | 0 | 0 | \--L--p-- | \- | \- | Heroine Gown | Elixir | MinervaCrown | MinervaCrown |
+| **295** | **Zalera** | 65000 | 4800 | 73 | 0 | 0 | \-I-P---- | \- | \-----P-- | Safety Bit | X-Ether | Zanmato | Zanmato |
+| **296** | **Minerva** | 59000 | 19000 | 68 | 0 | 0 | \--L--P-- | \- | \- | Heroine Gown | Elixir | MinervaCrown | MinervaCrown |
 | **297** | **Brynhildr** | 60000 | 18900 | 67 | 0 | 0 | F---W--- | \- | \---P---- | Storm Reaper | Storm Reaper | Gungnir | Gungnir |
 | **298** | **Kefka** | 65535 | 38000 | 83 | 0 | 0 | \- | \---P---- | \- | Gungnir | Gungnir | \- | \- |
 | **299** | **Lv40 Magic** | 4950 | 1000 | 55 | 0 | 0 | \- | F------- | \-I------ | Hi-Ether | Ether | Ether | \- |
@@ -386,10 +385,10 @@ F=fire, I=ice, L=lightning, P=poison, W=wind, H=Holy, E=earth, w=water
 | **354** | **Dark Kefka** | 65535 | 50000 | 86 | 0 | 0 | \---P---- | FIL-W-Ew | \- | Dark Eternal | Dark Eternal | \- | \- |
 | **355** | **Lv80 Magic** | 9000 | 2800 | 53 | 0 | 0 | \---P---- | \- | \-----H-- | Hi-Ether | Ether | Ether | \- |
 | **356** | **Lv90 Magic** | 10500 | 9000 | 55 | 0 | 0 | \----W--- | \-----pEw | \---P---- | Hi-Ether | Ether | Ether | \- |
-| **357** | **White Drgn** | 45000 | 12000 | 71 | 1000 | 5000 | \- | FIL--p-- | \---P---- | Pod Bracelet | Pod Bracelet | Force Helmet | Force Helmet |
-| **357** | **Holy Drgn** | 45000 | 12000 | 71 | 1000 | 5000 | \- | FIL--p-- | \---P---- | Pod Bracelet | Pod Bracelet | Force Helmet | Force Helmet |
+| **357** | **White Drgn** | 45000 | 12000 | 71 | 1000 | 5000 | \- | FIL--P-- | \---P---- | Pod Bracelet | Pod Bracelet | Force Helmet | Force Helmet |
+| **357** | **Holy Drgn** | 45000 | 12000 | 71 | 1000 | 5000 | \- | FIL--P-- | \---P---- | Pod Bracelet | Pod Bracelet | Force Helmet | Force Helmet |
 | **358** | **MagiMaster** | 50000 | 50000 | 68 | 5000 | 10000 | \- | \- | \- | Crystal Orb | Crystal Orb | Elixir | \- |
-| **359** | **SoulSaver** | 3366 | 566 | 41 | 0 | 0 | F----p-- | \- | \-I------ | Elixir | X-Ether | \- | \- |
+| **359** | **SoulSaver** | 3366 | 566 | 41 | 0 | 0 | F----P-- | \- | \-I------ | Elixir | X-Ether | \- | \- |
 | **360** | **Ultros** | 18600 | 8000 | 26 | 0 | 0 | \-------w | \- | F--P---- | Prayer Beads | Prayer Beads | \- | \- |
 | **361** | **Still Life** | 8832 | 500 | 37 | 2331 | 1574 | \- | \- | F------- | Gale Hairpin | RainbowBrush | \- | Ether |
 | **362** | **Arch-Fiend** | 60000 | 30000 | 93 | 60000 | 30000 | \---P---- | F------- | \- | \- | \- | Fallen Guard | Fallen Guard |

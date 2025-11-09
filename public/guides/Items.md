@@ -352,7 +352,8 @@ Table of Contents
 | White Cape | Blocks Pug, Mute | All |
 | Zephyr Cape | Evade \+50%, not stackable | All |
 
-| Restorative items | Effect |
+## **Misc. Items** {#misc.-items}
+| **Restorative**   | **Effect** |
 | :---- | :---- |
 | Tonic | Restores 100 HP. |
 | Potion | Restores 250 HP. |
@@ -373,19 +374,17 @@ Table of Contents
 | Remedy | Cures all status aliments except Zombie and KO. |
 | Sleeping Bag | Recovers one party member. |
 | Tent | Recovers all party members. |
-| **Other items** | **Effect** |
-| Smoke Bomb | Escapes from battle. |
-| Warp Stone | Escapes from a dungeon or battle. |
-| Magicite | Summons a random Esper. |
-| Super Ball | Deals random damage. |
 |  |  |
-| **Throwing items** | **Effect** |
+| **Throwing** | **Effect** |
 | Kunai Darts | Does small physical damage. |
 | Shuriken | Does moderate physical damage. |
 | Ninja Star | Does high physical damage. |
 | Water Edge | Does water damage. |
 | Fire Skean | Does fire damage. |
 | Bolt Edge | Does bolt damage. |
-
-## **Misc. Items** {#misc.-items}
-
+|  |  |
+| **Other** | **Effect** |
+| Smoke Bomb | Escapes from battle. |
+| Warp Stone | Escapes from a dungeon or battle. |
+| Magicite | Summons a random Esper. |
+| Super Ball | Deals random damage. |

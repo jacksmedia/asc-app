@@ -1,4 +1,4 @@
-# **VIII. Blue List**
+# **Blue List**
 
 The following is a list of all Blue magic, the best monster to learn it from, and the location.  
 **NOTE**: Not all methods of learning these spells are listed, but rather the earliest location and best monster to learn them from. I did not list Oni (previously Dark Force) in Kefka’s Tower, which uses every Blue magic spell on this list minus Beam, Quasar, and Quick\!

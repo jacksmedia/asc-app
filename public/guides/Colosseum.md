@@ -1,10 +1,8 @@
 # **Colosseum List**
 
-The following is a list of every item in the game that grants you something OTHER than a common Exlixir at the Colosseum.  Keep in mind that you no longer lose the item you bet if you lose the battle, but you WILL lose the item when you win for trading it in. This is a new feature since everybody resets the game when they lose a valuable item anyway…
+The following is a list of every item in the game that grants you something OTHER than a common Elixir at the Colosseum.  Keep in mind that you no longer lose the item you bet if you lose the battle, but you WILL lose the item when you win for trading it in. This is a new feature since everybody resets the game when they lose a valuable item anyway…
 
-TIP: As a general rule, if you bet a rare item and have Siegfried appear to fight in exchange for a Megalixir, that is a sign you may want to hold on to the item, as it could be lost-forever\!  One exception to this rule is the following:
-
-SPOILER: If you get an Excalipoor from Chupon and bet it at the Colosseum, this is the one time you will want to fight Siegfried in exchange for the Dark Eternal\!
+TIP: As a general rule, if you bet a rare item and have Siegfried appear to fight in exchange for a Megalixir, that is a sign you may want to hold on to the item, as it could be lost-forever\!
 
 | Item bet	 | Item won |  Monster Fought |
 | :---- | :---- | :---- |

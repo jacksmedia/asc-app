@@ -1,7 +1,7 @@
-# **VI. Rage List**
+# **Rage List**
 
 This is a list of all the rages in the game.  
-NOTE: Some monsters have two names on this list.  The second name is for the Alternate monster pack only and is not used in the default hack.
+NOTE: Some monsters have two names on this list; the second name is for Flavor B.
 
 | Name:		 | Attack 1 | Attack 2	 |
 | :---- | :---- | :---- |
@@ -105,7 +105,7 @@ NOTE: Some monsters have two names on this list.  The second name is for the Alt
 | **Goblin** | Battle | Shell |
 | **Goggler/Cenchos** | Battle | Tentacle |
 | **Gold Bear** | x1.5 Battle | x1.5 Battle |
-| **GoldGiant x4 Battle** | Magnitude8 |  |
+| **GoldGiant** | x4 Battle | Magnitude8 |
 | **GreatBeast** | x2.5 Battle | Meteor |
 | **Grenade** | Fireball | Blaze |
 | **Grunt** | Ice | x1.5 Battle |
