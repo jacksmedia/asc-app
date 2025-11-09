@@ -16,30 +16,9 @@ function MdDisplay({mdFile}: MdDisplayProp) {
     }, [mdFile])
     
     return(
-        <>
         <ReactMarkdown remarkPlugins={[remarkGfm]}>
             {content}
         </ReactMarkdown>
-        
-        <style tsx>{`
-        * {
-        color: #ffc;
-        }
-        p {
-        max-width: 80vw;
-        }
-        strong {
-        font-size: 130%;
-        }
-        table, th {
-        margin-bottom: 20px;
-        border: 1px solid #ffc;
-        }
-        td, th {
-        padding-left: 2px;
-        }
-        `}</style>
-        </>
     );
 };
 export default MdDisplay;

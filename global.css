@@ -130,7 +130,7 @@ main div {
 /* List formatting per page */
 .guides-list li a {
   font-size: 1.6em;
-  color:#dfc325;
+  color:#ffc;
 }
 
 .guides-list li {
@@ -142,7 +142,21 @@ main div {
   color: white;
 }
 
-/* tables */
+/* tables & Guides formatting */
+p {
+  max-width: 80vw;
+}
+strong {
+  font-size: 130%;
+}
+table, th {
+  margin-bottom: 20px;
+  border: 1px solid #ffc;
+}
+td, th {
+  padding-left: 2px;
+  color: #ffc;
+}
 
 /* striped rows */
 tr:nth-child(even) {
