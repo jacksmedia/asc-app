@@ -1,6 +1,6 @@
 import ReactMarkdown from 'react-markdown';
-import remarkSlug from 'remark-slug'
-import remarkGfm from 'remark-gfm'
+import rehypeSlug from 'rehype-slug'
+import remarkGfm from 'remark-gfm';
 
 import { useState, useEffect } from 'react';
 
@@ -19,7 +19,9 @@ function MdDisplay({mdFile}: MdDisplayProp) {
     
     return(
         <ReactMarkdown 
-            remarkPlugins={[remarkSlug, remarkGfm]}>
+            remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeSlug]}
+            >
             {content}
         </ReactMarkdown>
     );
