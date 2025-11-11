@@ -2,34 +2,21 @@
 
 This is a list of all the items in the game.
 
-Table of Contents  
-[**Weapons**	2](#weapons)
+Quick Links:
+[**• Weapons**](#weapons)
+[**• Daggers, Swords and Katanas**](#daggers)
+[**• Spears, Claws, Rods, Brushes**](#spears)
+[**• Fists, Guns and Others**](#fists)
+[**• Tools**](#tools)
+[**• Shields**](#shields)
+[**• Hats and Helmets**](#hats-and-helmets)
+[**• Body Armor**](#body-armor)
+[**• Relics**](#relics)
+[**• Misc. Items**](#misc-items)
 
-[**Daggers, Swords and Katanas**	2](#daggers)
+### Weapons
 
-[**Spears, Claws, Rods, Brushes and Hammers**	3](#spears)
-
-[**Fists, Guns and Gambler’s items**	4](#fists-–-only-gau-can-equip-these-weapons.)
-
-[**Other weapons**	4](#heading=h.gsdccrkpish1)
-
-[**Tools**	4](#tools)
-
-[**Armor**	5](#armor)
-
-[**Shields**	5](#shields)
-
-[**Hats and Helmets**	5](#hats-and-helmets)
-
-[**Light and Heavy armor**	6](#light-and-heavy-armor)
-
-[**Relics**	7](#relics)
-
-[**Misc. Items**	8](#misc.-items)
-
-## **Weapons** {#weapons}
-
-### **Daggers** {#daggers}
+### Daggers
 
 | Name | Attack | Hit rate | Description | Characters |
 | :---- | ----- | :---: | :---- | :---- |
@@ -39,7 +26,7 @@ Table of Contents
 | Thief Knife | 87 | 180 | Random "Mug" | Locke, Setzer, Gogo |
 | ValiantKnife | 42 | 180 | Low HP \= more power, long range | Locke |
 
-###   **Swords**
+### Swords
 
 | Name | Attack | Hit rate | Description | Characters |
 | :---- | ----- | :---: | :---- | :---- |
@@ -47,7 +34,7 @@ Table of Contents
 | Purifier | 231 | 255 | Long range, pierces defense, never misses. | Locke |
 | Iron Sword | 38 | 150 |  | Terra, Leo, Edgar, Celes |
 | RegalCutlass | 54 | 150 |  | Terra, Leo, Edgar, Celes |
-| Halcyon | 100 | 150 | Magic power \+25% | Celes |
+| Halcyon | 100 | 150 | Magic power \+25% | Celes |
 | Flame Sabre | 109 | 150 | Randomly casts Fire | Terra, Leo, Edgar, Celes |
 | Icebrand | 109 | 150 | Randomly casts Ice | Terra, Leo, Edgar, Celes |
 | Thunderblade | 109 | 150 | Randomly casts Bolt | Terra, Leo, Edgar, Celes |
@@ -63,19 +50,20 @@ Table of Contents
 | Excalibur | 250 | 200 | Holy elemental. Criticals and Magic power \+25%. | Leo |
 | Dark Eternal | 255 | 255 | Attack power and criticals \+25%. | Leo |
 
-###  **Katanas**
+### Katanas
+Only Cyan can equip these weapons
 
-| Name | Attack | Hit rate | Description | Characters |
-| :---- | :---: | :---: | :---- | :---- |
-| Ashura | 64 | 150 |  | Cyan |
-| Kotetsu | 98 | 150 |  | Cyan |
-| Tempest | 105 | 150 | Random Wind Slash | Cyan |
-| Murasame | 190 | 150 | Criticals \+25% | Cyan |
-| Masamune | 220 | 175 | Criticals \+33%, Vigor \+50%, Magic Power \+25% | Cyan |
-| Zanmato | 230 | 200 | Criticals \+25%, random multi-strike | Cyan |
-| Mastermune | 255 | 255 | Random Multi-strike, Vigor \+50%, Magic Power \+25%, Attack Power \+25%, Long Range | Cyan |
+| Name | Attack | Hit rate | Description |
+| :---- | :---: | :---: | :---- |
+| Ashura | 64 | 150 |  |
+| Kotetsu | 98 | 150 |  |
+| Tempest | 105 | 150 | Random Wind Slash |
+| Murasame | 190 | 150 | Criticals \+25% |
+| Masamune | 220 | 175 | Criticals \+33%, Vigor \+50%, Magic Power \+25% |
+| Zanmato | 230 | 200 | Criticals \+25%, random multi-strike |
+| Mastermune | 255 | 255 | Random Multi-strike, Vigor \+50%, Magic Power \+25%, Attack Power \+25%, Long Range |
 
-###  **Spears** {#spears}
+### Spears
 
 | Name | Attack | Hit rate | Description | Characters |
 | :---- | :---: | :---: | :---- | :---- |
@@ -85,7 +73,8 @@ Table of Contents
 | Gungnir | 197 | 255 | Random Lighting | Edgar, Mog |
 | Chef Skewer | 206 | 150 | A pug spear? | All |
 
-**Nunchucks –** Only Sabin can equip these weapons.
+### Nunchucks
+Only Sabin can equip these weapons
 
 | Name | Attack | Hit rate | Description |
 | :---- | :---: | :---: | :---- |
@@ -93,7 +82,8 @@ Table of Contents
 | Chainstick | 65 | 200 |  |
 | Pyro Chain | 115 | 200 | Random Fire |
 
-**Claws –** Only Sabin can equip these weapons.
+### Claws
+Only Sabin can equip these weapons
 
 | Name | Attack | Hit rate | Description |
 | :---- | :---: | :---: | :---- |
@@ -103,7 +93,7 @@ Table of Contents
 | Godhand | 245 | 200 | Holy elemental, vigor \+50%, random multi-strike |
 | War Claw | 247 | 225 | Criticals \+25%, random shrapnel |
 
-###  **Rods**
+### Rods
 
 | Name | Attack | Hit rate | Description | Characters |
 | :---- | :---: | :---: | :---- | :---- |
@@ -118,7 +108,39 @@ Table of Contents
 | Healing Rod | 199 | 255 | Restores HP to a target. | Terra, Celes, Strago |
 | Stardust Rod | 217 | 135 | Regenerates MP, Magic power \+25% | Strago |
 
-###  **Guns**
+### Bows
+
+| Name | Attack | Hit rate | Description | Characters |
+| :---- | :---: | :---: | :---- | :---- |
+| Short Bow | 81 | 140 |  | Terra, Celes, Mog |
+| Gale Bow | 108 | 150 | Wind Elemental | Terra, Celes, Mog |
+| Medusa Bow | 145 | 150 | Randomly petrify foe | Terra, Celes, Mog |
+| White Bow | 162 | 150 | Holy elemental, Magic power \+25% | Terra, Celes, Mog |
+| Ethereal Bow | 240 | 200 | MP for Criticals, Multi-Strike, Magic Power \+25% | Terra |
+
+### Brushes
+Only Relm can equip these weapons
+
+| Name | Attack | Hit rate | Description |
+| :---- | :---: | :---: | :---- |
+| ChocoboBrush | 74 | 135 |  |
+| DaVinciBrush | 125 | 135 | Slows foes |
+| RainbowBrush | 158 | 135 | Mutes foe |
+| Aspergillum | 180 | 135 | Holy elemental. May invoke an Esper, Magic power \+25% |
+
+
+### Fists
+
+Only Gau can equip these weapons
+
+| Name | Attack | Hit rate | Desciption |
+| :---- | :---: | :---: | :---- |
+| Knuckles | 42 | 150 | . |
+| Wild Heart | 60 | 200 | Blocks fatal magic. |
+| Gold Fist | 68 | 175 | x2 Gil, Magic power \+25%. Randomly inflicts stoneg. |
+| Adamant Fist | 90 | 250 | Random rock slide, blocks petrify. |
+
+### Guns
 
 | Name | Attack | Hit rate | Description | Characters |
 | :---- | :---: | :---: | :---- | :---- |
@@ -129,26 +151,25 @@ Table of Contents
 | Ace Shot | Random | 255 | Shotgun for a Hotshot, 2,000-9,999 damage | Setzer |
 | Hellfire Shot | Random | 255 | 2,000-9,999 damage, random Inferno | Setzer |
 
-**Bows**
 
-| Name | Attack | Hit rate | Description | Characters |
-| :---- | :---: | :---: | :---- | :---- |
-| Short Bow | 81 | 140 |  | Terra, Celes, Mog |
-| Gale Bow | 108 | 150 | Wind Elemental | Terra, Celes, Mog |
-| Medusa Bow | 145 | 150 | Randomly petrify foe | Terra, Celes, Mog |
-| White Bow | 162 | 150 | Holy elemental, Magic power \+25% | Terra, Celes, Mog |
-| Ethereal Bow | 240 | 200 | MP for Criticals, Multi-Strike, Magic Power \+25% | Terra |
-
-**Brushes –** Only Relm can equip these weapons.
+### Futuristic "Ray" Guns
+Only Gogo can equip these weapons
 
 | Name | Attack | Hit rate | Description |
 | :---- | :---: | :---: | :---- |
-| ChocoboBrush | 74 | 135 |  |
-| DaVinciBrush | 125 | 135 | Slows foes |
-| RainbowBrush | 158 | 135 | Mutes foe |
-| Aspergillum | 180 | 135 | Holy elemental. May invoke an Esper, Magic power \+25% |
+| PhaseBlaster | 190 | 255 | Allows “Twin Sword”. |
+| M-Tek Rifle | 220 | 255 | Cid’s creation, Magic power \+25%, allows “Twin Sword”. |
+| HyperBlaster | 248 | 255 | Of another dimension, Criticals \+25%, comes with Hyper Drive. |
 
-###  **Hammers & Scythes**
+### Boomerangs
+
+| Name | Attack | Hit rate | Description | Characters |
+| :---- | :---: | :---: | :---- | :---- |
+| Boomerang | 95 | 170 | Effective vs. Flying foe | Mog, Gogo |
+| Moon Ring | 152 | 200 | Effective vs. Flying foe | Mog, Gogo |
+| Moogle Disk | 1 | 255 | Pierces defense, never misses, random? | Mog, Gogo |
+
+### Hammers & Scythes
 
 | Name | Attack | Hit rate | Desciption | Characters |
 | :---- | ----- | ----- | :---- | :---- |
@@ -157,32 +178,8 @@ Table of Contents
 | Lunar Hammer | 250 | 255 | Magic power \+25%, Pierces Defense | Umaro |
 | Pug Gavel | 210 | 255 | Permanent pug status, pierces defense, never misses. | Most  |
 
-**Fists –** Only Gau can equip these weapons.
 
-| Name | Attack | Hit rate | Desciption |
-| :---- | :---: | :---: | :---- |
-| Knuckles | 42 | 150 | . |
-| Wild Heart | 60 | 200 | Blocks fatal magic. |
-| Gold Fist | 68 | 175 | x2 Gil, Magic power \+25%. Randomly inflicts stoneg. |
-| Adamant Fist | 90 | 250 | Random rock slide, blocks petrify. |
-
-**Futuristic “Ray” Guns –** Only Gogo can equip these weapons.
-
-| Name | Attack | Hit rate | Description |
-| :---- | :---: | :---: | :---- |
-| PhaseBlaster | 190 | 255 | Allows “Twin Sword”. |
-| M-Tek Rifle | 220 | 255 | Cid’s creation, Magic power \+25%, allows “Twin Sword”. |
-| HyperBlaster | 248 | 255 | Of another dimension, Criticals \+25%, comes with Hyper Drive. |
-
-### **Boomerangs**
-
-| Name | Attack | Hit rate | Description | Characters |
-| :---- | :---: | :---: | :---- | :---- |
-| Boomerang | 95 | 170 | Effective vs. Flying foe | Mog, Gogo |
-| Moon Ring | 152 | 200 | Effective vs. Flying foe | Mog, Gogo |
-| Moogle Disk | 1 | 255 | Pierces defense, never misses, random? | Mog, Gogo |
-
-## **Tools** {#tools}
+### Tools
 
 | Name | Description |
 | :---- | :---- |
@@ -195,11 +192,12 @@ Table of Contents
 | Rocket Punch | Attacks all enemies. |
 | AutoCrossbow | Attacks all enemies. |
 
-##  **Armor** {#armor}
 
-### **Shields** {#shields}
+### Armor
 
-| Name | Defense | M.def | Description | Characters |
+### Shields
+
+Name | Defense | M.def | Description | Characters |
 | :---- | :---: | :---: | :---- | :---- |
 | Force Shield | 0 | 65 | Magic evade up, resists elements 50% | All |
 | CursedShield | 1 | 0 | ? | All |
@@ -218,7 +216,7 @@ Table of Contents
 | Lantern | 65 | 50 | Held by a Pug\! | All |
 | Paladin Shld | 65 | 55 | Nulls elements, resists magic 50% | All |
 
-### **Hats and Helmets** {#hats-and-helmets}
+### Hats and Helmets
 
 | Name | Defense | M.def | Description | Characters |
 | :---- | :---: | :---: | :---- | :---- |
@@ -255,7 +253,8 @@ Table of Contents
 | Oni Kabuto | 43 | 45 | Counters attacks, Protect others | Cyan |
 | Mech Helmet | 60 | 50 | Grants shield, shell. Evade \+50% | Locke, Sabin, Strago, Mog |
 
-### **Light and Heavy armor** {#light-and-heavy-armor}
+
+### Body Armor
 
 | Name | Defense | M.def | Description | Characters |
 | :---- | :---: | :---: | :---- | :---- |
@@ -293,9 +292,10 @@ Table of Contents
 | Bone Mail | 105 | 70 | Blocks fatal magic and poison | Umaro |
 | Adamant Mail | 130 | 90 | Blocks Fire, Ice, Bolt, Petrify, and Freeze.  Other Elements \-50% | Leo |
 
-## **Relics** {#relics}
 
-| Name | Effect | Characters |
+### Relics
+
+ame | Effect | Characters |
 | :---- | :---- | :---- |
 | Amulet | Blocks Zombie, Blind, Poison | All |
 | Black Belt | Randomly counter attacks | All |
@@ -352,7 +352,8 @@ Table of Contents
 | White Cape | Blocks Pug, Mute | All |
 | Zephyr Cape | Evade \+50%, not stackable | All |
 
-## **Misc. Items** {#misc.-items}
+### Misc Items
+
 | **Restorative**   | **Effect** |
 | :---- | :---- |
 | Tonic | Restores 100 HP. |

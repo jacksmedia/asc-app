@@ -1,27 +1,27 @@
 
 
 Table of contents  
-[**I.  Overview**	1](#i.-overview)
+[**I. Overview**](#i-overview)
 
-[**II. Gameplay Changes and Notes**	2](#ii.-gameplay-changes-and-notes)
+[**II. Gameplay Changes and Notes**](#ii-gameplay-changes-and-notes)
 
-[**III. Walkthrough**	3](#iii.-walkthrough)
+[**III. Walkthrough**](#iii-walkthrough)
 
-[**World of Balance**	3](#world-of-balance)
+[**World of Balance**](#world-of-balance)
 
-[**World of Ruin**	13](#world-of-ruin)
+[**World of Ruin**](#world-of-ruin)
 
-[**Elusive Beast Hunting (AND ULTIMATE ITEM GATHERING)**	30](#elusive-beast-hunting-\(and-ultimate-item-gathering\)-there-are-a-total-of-12-optional-elusive-beasts-you-may-hunt-for:)
+[**Elusive Beast Hunting (AND ULTIMATE ITEM GATHERING)**](#elusive-beast-hunting-and-ultimate-item-gathering)
 
-[**Final Boss Battle**	37](#heading=h.1r1x42ovrcph)
+[**Final Boss Battle**](#the-final-battle-with-kefka)
 
-# **I.  Overview** {#i.-overview}
+# I. Overview
 
 This guide is a walkthrough to mostly cover changes made to FFVI \- A Soldier's Contingency.  In particular, it focuses on lost-forever items and rages, new secrets, missable content, and tips for beating the new monsters/bosses. This guide assumes that you have some basic knowledge of the original game. If you need a guide that shows you something like “where to go next”, I would recommend [Djibriel's FAQ](https://gamefaqs.gamespot.com/gba/930370-final-fantasy-vi-advance/faqs/51030), although there are plenty of other guides online.
 
 NOTE: This guide is based on the default difficulty level. If you use the insane or mild difficulty levels, some of the stats give in this guide won’t be exactly the same (HP of the monsters for example).  However, the tips and strategies remain the same, and so do the lost-forevers, steals, drops, treasures, and more.
 
-# **II. Gameplay Changes and Notes** {#ii.-gameplay-changes-and-notes}
+# II. Gameplay Changes and Notes
 
 The following is a quick list of major changes from the original game that might effect how you play. There are countless other additions and changes, but these are the bigger ones:
 
@@ -52,9 +52,9 @@ The following is a quick list of major changes from the original game that might
 * Retort will also last the entire battle or until used, just like with runic.  
 * There is in fact some new dialog scattered around various towns, and not every NPC says the same thing they used to \- especially in the WoR.
 
-# **III. Walkthrough** {#iii.-walkthrough}
+# III. Walkthrough
 
-## **World of Balance** {#world-of-balance}
+## World of Balance
 
 **Narshe, the beginning:**
 
@@ -556,7 +556,7 @@ Here is a full list of rare steals in the Floating Continent:
 
 **NOTE:** Shadow is not a playable character anymore, so your party will jump to the airship automatically without a prompt to wait for him.
 
-## **World of Ruin** {#world-of-ruin}
+## World of Ruin
 
 **The lonely island and Cid:**
 
@@ -1248,8 +1248,9 @@ Shell is not a bad idea to lower the damage caused by Minerva's Lightning, Infer
 
 The next section covers optional Beast hunting and the ultimate item gathering. If you don't want to face  these big, bad monsters and gather the ultimate items, you may skip the next section and proceed straight to the Final Boss Battle section.
 
-## **Elusive Beast Hunting (AND ULTIMATE ITEM GATHERING)** **There are a total of 12 optional elusive beasts you may hunt for:** {#elusive-beast-hunting-(and-ultimate-item-gathering)-there-are-a-total-of-12-optional-elusive-beasts-you-may-hunt-for:}
+## Elusive Beast Hunting (AND ULTIMATE ITEM GATHERING)
 
+**There are a total of 12 optional elusive beasts you may hunt for:** 
 * 2 Beasts are available at any time in the overworld.   
 * 4 are available at Kefka's Tower, also at any time.   
 * Another 4 are available at the new “Rift Island”, but only after you have unlocked them by defeating the other 4 beasts in Kefka’s Tower.  Alternatively, they appear in Kefka’s Tower with your party above level 70\.  

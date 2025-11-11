@@ -1,5 +1,7 @@
 import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
+import remarkSlug from 'remark-slug'
+import remarkGfm from 'remark-gfm'
+
 import { useState, useEffect } from 'react';
 
 interface MdDisplayProp {
@@ -16,7 +18,8 @@ function MdDisplay({mdFile}: MdDisplayProp) {
     }, [mdFile])
     
     return(
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+        <ReactMarkdown 
+            remarkPlugins={[remarkSlug, remarkGfm]}>
             {content}
         </ReactMarkdown>
     );
